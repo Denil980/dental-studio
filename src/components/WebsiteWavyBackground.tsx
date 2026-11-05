@@ -16,42 +16,42 @@ export const WebsiteWavyBackground: React.FC = () => {
     >
       {/* 1. Base Alabaster/Porcelain Foundation with Soft Vignette */}
       <div 
-        className="absolute inset-0 bg-[#F9FBFC]" 
+        className="absolute inset-0 bg-[#F8FAFC]" 
       />
 
-      {/* 2. Soft Natural Diffuse Light Blooms (Simulating studio daylight) */}
+      {/* 2. Soft Natural Diffuse Light Blooms with Warm Gray & Sky Balances */}
       {/* Upper-right soft sky ambiance */}
       <div 
         className="absolute -top-[20%] right-[-10%] w-[900px] h-[900px] rounded-full pointer-events-none"
         style={{
-          background: 'radial-gradient(circle at 50% 50%, rgba(224, 242, 254, 0.45) 0%, rgba(240, 249, 255, 0.2) 45%, transparent 75%)',
+          background: 'radial-gradient(circle at 50% 50%, rgba(226, 232, 240, 0.7) 0%, rgba(241, 245, 249, 0.4) 45%, transparent 75%)',
           filter: 'blur(80px)'
         }}
       />
-      {/* Mid-left warm luminous fill */}
+      {/* Mid-left luminous slate gray fill */}
       <div 
-        className="absolute top-[35%] -left-[15%] w-[800px] h-[800px] rounded-full pointer-events-none"
+        className="absolute top-[35%] -left-[15%] w-[850px] h-[850px] rounded-full pointer-events-none"
         style={{
-          background: 'radial-gradient(circle at 50% 50%, rgba(241, 245, 249, 0.6) 0%, rgba(224, 242, 254, 0.25) 45%, transparent 70%)',
+          background: 'radial-gradient(circle at 50% 50%, rgba(203, 213, 225, 0.5) 0%, rgba(224, 242, 254, 0.2) 45%, transparent 70%)',
           filter: 'blur(90px)'
         }}
       />
-      {/* Lower subtle depth accent */}
+      {/* Lower subtle depth accent in slate gray */}
       <div 
         className="absolute -bottom-[20%] right-[10%] w-[950px] h-[750px] rounded-full pointer-events-none"
         style={{
-          background: 'radial-gradient(circle at 50% 50%, rgba(224, 242, 254, 0.35) 0%, rgba(248, 250, 252, 0.2) 50%, transparent 75%)',
+          background: 'radial-gradient(circle at 50% 50%, rgba(226, 232, 240, 0.6) 0%, rgba(248, 250, 252, 0.3) 50%, transparent 75%)',
           filter: 'blur(100px)'
         }}
       />
 
-      {/* 3. Subtle Architectural Precision Grid (Whisper-soft 56px hairline) */}
+      {/* 3. Subtle Architectural Precision Grid (Whisper-soft 56px hairline in slate gray) */}
       <div 
-        className="absolute inset-0 opacity-[0.28]"
+        className="absolute inset-0 opacity-[0.35]"
         style={{
           backgroundImage: `
-            linear-gradient(to right, rgba(148, 163, 184, 0.08) 1px, transparent 1px),
-            linear-gradient(to bottom, rgba(148, 163, 184, 0.08) 1px, transparent 1px)
+            linear-gradient(to right, rgba(100, 116, 139, 0.08) 1px, transparent 1px),
+            linear-gradient(to bottom, rgba(100, 116, 139, 0.08) 1px, transparent 1px)
           `,
           backgroundSize: '56px 56px',
           maskImage: 'radial-gradient(ellipse 85% 75% at 50% 45%, black 25%, transparent 90%)',

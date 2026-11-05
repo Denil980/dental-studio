@@ -12,7 +12,6 @@ import {
 import { CountUp } from '../components/CountUp';
 import { TypewriterHeading } from '../components/TypewriterHeading';
 import { ScrollReveal } from '../components/ScrollReveal';
-import { Tooth3DViewer } from '../components/Tooth3DViewer';
 import { 
   DentalImplantIcon, 
   DentMatrixLabIcon, 
@@ -156,9 +155,41 @@ export const HomePage: React.FC<HomePageProps> = ({
               </div>
             </div>
 
-            {/* Right: 3D Anatomical Tooth Model with Scroll-Driven Rotation */}
+            {/* Right: Hero Image Showcase with Refined Gray & Slate Framing */}
             <div className="lg:col-span-5 relative flex justify-center">
-              <Tooth3DViewer className="max-w-md w-full" />
+              {/* Architectural Soft Gray Depth Aura */}
+              <div className="absolute inset-0 bg-gradient-to-tr from-slate-200/70 via-slate-100/50 to-transparent rounded-3xl filter blur-2xl -z-10 transform scale-95" />
+
+              {/* Main Luxury Gray Framed Showcase Card */}
+              <div className="relative w-full max-w-md rounded-3xl bg-slate-100/90 p-3 sm:p-4 border border-slate-300/80 shadow-[0_20px_50px_-15px_rgba(15,23,42,0.12)] transition-all duration-500 hover:shadow-[0_25px_60px_-15px_rgba(15,23,42,0.18)]">
+                {/* Image Container with Sleek Gray Border */}
+                <div className="relative aspect-[4/4.2] rounded-2xl overflow-hidden bg-slate-200 shadow-inner">
+                  <img
+                    src="https://images.unsplash.com/photo-1629909615184-74f495363b67?auto=format&fit=crop&w=1200&q=80"
+                    alt="Dr. Inamdar's Dental Studio Clinic Operatory"
+                    className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
+                  />
+                  {/* Subtle Elegant Gradient Overlay for Depth */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-slate-950/70 via-slate-950/15 to-transparent pointer-events-none" />
+
+                  {/* Bottom Slate/Gray Overlay Details */}
+                  <div className="absolute bottom-3 left-3 right-3 p-3.5 rounded-xl bg-slate-900/85 backdrop-blur-md border border-slate-700/60 text-white space-y-0.5">
+                    <p className="text-sm font-bold font-heading tracking-wide text-white">DentMatrix 3D Center</p>
+                    <p className="text-xs text-slate-300 font-body">State-of-the-Art Digital Operatory in Mumbai</p>
+                  </div>
+                </div>
+
+                {/* Floating Experience Badge with Premium Slate Gray Styling */}
+                <div className="absolute -top-3 -left-3 sm:-left-4 bg-white/95 backdrop-blur-md px-4 py-2.5 rounded-2xl border border-slate-200/90 shadow-md flex items-center gap-3">
+                  <div className="w-9 h-9 rounded-xl bg-slate-100 text-[#0284C7] flex items-center justify-center font-bold text-sm">
+                    20+
+                  </div>
+                  <div>
+                    <p className="text-xs font-bold text-slate-900 leading-tight">Years Excellence</p>
+                    <p className="text-[10px] text-slate-500">Since 2003</p>
+                  </div>
+                </div>
+              </div>
             </div>
 
           </div>
@@ -171,9 +202,9 @@ export const HomePage: React.FC<HomePageProps> = ({
               return (
                 <ScrollReveal key={stat.label} index={idx}>
                   <div 
-                    className="bg-white rounded-2xl p-6 border border-slate-200/80 shadow-xs premium-card text-center flex flex-col items-center justify-center group h-full"
+                    className="bg-white/95 rounded-2xl p-6 border border-slate-200 shadow-xs premium-card text-center flex flex-col items-center justify-center group h-full hover:border-slate-300 hover:bg-slate-50/60 transition-all duration-300"
                   >
-                    <div className="w-10 h-10 rounded-xl bg-sky-50 text-[#0284C7] flex items-center justify-center mb-3 group-hover:scale-110 group-hover:bg-[#0284C7] group-hover:text-white transition-all">
+                    <div className="w-10 h-10 rounded-xl bg-slate-100 text-[#0284C7] flex items-center justify-center mb-3 group-hover:scale-110 group-hover:bg-[#0284C7] group-hover:text-white transition-all">
                       <StatIcon className="w-5 h-5" />
                     </div>
                     <CountUp 
