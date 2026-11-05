@@ -113,8 +113,8 @@ export const HomePage: React.FC<HomePageProps> = ({
   return (
     <div className="space-y-16 pb-20">
       
-      {/* Hero Section - Clean, Premium & Elegant */}
-      <section className="relative overflow-hidden bg-gradient-to-b from-white via-sky-50/20 to-white pt-10 pb-16 lg:pt-14 lg:pb-24 border-b border-slate-100">
+      {/* Hero Section - Clean, Premium & Elegant with Blue Gradient Wash */}
+      <section className="relative overflow-hidden bg-gradient-to-b from-sky-50/70 via-white/50 to-transparent pt-10 pb-16 lg:pt-14 lg:pb-24 border-b border-sky-100/60">
         <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
             
@@ -157,8 +157,8 @@ export const HomePage: React.FC<HomePageProps> = ({
 
             {/* Right: Hero Image Showcase with Refined Gray & Slate Framing */}
             <div className="lg:col-span-5 relative flex justify-center">
-              {/* Architectural Soft Gray Depth Aura */}
-              <div className="absolute inset-0 bg-gradient-to-tr from-slate-200/70 via-slate-100/50 to-transparent rounded-3xl filter blur-2xl -z-10 transform scale-95" />
+              {/* Soft Blue Depth Aura */}
+              <div className="absolute inset-0 bg-gradient-to-tr from-sky-200/60 via-sky-100/40 to-transparent rounded-3xl filter blur-2xl -z-10 transform scale-95" />
 
               {/* Main Luxury Gray Framed Showcase Card */}
               <div className="relative w-full max-w-md rounded-3xl bg-slate-100/90 p-3 sm:p-4 border border-slate-300/80 shadow-[0_20px_50px_-15px_rgba(15,23,42,0.12)] transition-all duration-500 hover:shadow-[0_25px_60px_-15px_rgba(15,23,42,0.18)]">

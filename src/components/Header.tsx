@@ -27,7 +27,7 @@ export const Header: React.FC<HeaderProps> = ({
   };
 
   return (
-    <header className="sticky top-0 z-50 bg-white/90 backdrop-blur-xl border-b border-slate-200/60 shadow-[0_1px_3px_rgba(15,23,42,0.03)] select-none transition-all duration-300">
+    <header className="sticky top-0 z-50 bg-white/80 backdrop-blur-xl border-b border-sky-100/70 shadow-[0_2px_12px_rgba(2,132,199,0.04)] select-none transition-all duration-300">
       <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
         
         {/* Dual Brand Logo */}

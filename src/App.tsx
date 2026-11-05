@@ -93,9 +93,9 @@ export function App() {
   };
 
   return (
-    <div className="min-h-screen flex flex-col bg-[#F8FAFC] text-slate-900 font-sans selection:bg-sky-200 selection:text-sky-900 relative">
+    <div className="min-h-screen flex flex-col text-slate-900 font-sans selection:bg-sky-200 selection:text-sky-900 relative">
       
-      {/* Global Wavy Background with subtle blue, black & gray lines + 4 faded cartoon teeth */}
+      {/* Global Modern Blue Gradient & Translucent Wave Background (Reference Image Inspired) */}
       <WebsiteWavyBackground />
 
       {/* Top Mega-Menu Navigation Bar */}

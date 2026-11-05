@@ -34,8 +34,8 @@ export const ScreenSwitcher: React.FC<ScreenSwitcherProps> = ({
 
   return (
     <aside aria-label="Mockup Screen Navigator" className="fixed bottom-4 left-1/2 -translate-x-1/2 z-50 max-w-[95vw] bg-slate-900/90 text-white backdrop-blur-md px-3 py-2 rounded-full shadow-2xl border border-white/10 flex items-center gap-1.5 overflow-x-auto no-scrollbar">
-      <div className="flex items-center gap-1.5 px-2 py-1 text-[11px] font-bold text-purple-300 uppercase tracking-wider shrink-0 border-r border-slate-700 pr-3">
-        <Layers className="w-3.5 h-3.5 text-purple-400" />
+      <div className="flex items-center gap-1.5 px-2 py-1 text-[11px] font-bold text-sky-300 uppercase tracking-wider shrink-0 border-r border-slate-700 pr-3">
+        <Layers className="w-3.5 h-3.5 text-sky-400" />
         <span className="hidden sm:inline">Design Screens</span>
       </div>
 
@@ -52,13 +52,13 @@ export const ScreenSwitcher: React.FC<ScreenSwitcherProps> = ({
               }}
               className={`flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-medium transition-all shrink-0 cursor-pointer ${
                 isActive
-                  ? 'bg-[#7C3AED] text-white shadow-md shadow-purple-600/40 font-semibold'
+                  ? 'bg-[#0284C7] text-white shadow-md shadow-sky-600/40 font-semibold'
                   : 'text-slate-300 hover:text-white hover:bg-white/10'
               }`}
               title={`Switch to Screen ${s.number}: ${s.name}`}
             >
               <span className={`w-4 h-4 rounded-full flex items-center justify-center text-[10px] font-bold ${
-                isActive ? 'bg-white text-[#7C3AED]' : 'bg-slate-800 text-slate-300'
+                isActive ? 'bg-white text-[#0284C7]' : 'bg-slate-800 text-slate-300'
               }`}>
                 {s.number}
               </span>
