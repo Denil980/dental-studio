@@ -342,7 +342,6 @@ export const TestimonialsPage: React.FC<TestimonialsPageProps> = ({ onNavigate, 
                 className="w-full h-full object-cover opacity-80"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent flex flex-col justify-end p-6 text-white">
-                <span className="text-xs font-bold text-sky-400 uppercase tracking-wider">{activeVideo.treatment}</span>
                 <h4 className="text-lg font-bold">{activeVideo.patientName} — {activeVideo.location}</h4>
                 <p className="text-xs text-slate-300 mt-1 line-clamp-2">"{activeVideo.quote}"</p>
               </div>

@@ -175,7 +175,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate, onOpenBookingM
           <h2 className="text-3xl font-extrabold text-slate-900 tracking-tight">
             Our Experience & Achievements
           </h2>
-          <p className="text-xs text-slate-500 uppercase tracking-widest font-bold">
+          <p className="text-sm text-slate-500 max-w-xl mx-auto">
             Recognized for clinical precision and patient trust since 2003
           </p>
         </div>
