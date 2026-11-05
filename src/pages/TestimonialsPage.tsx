@@ -84,9 +84,6 @@ export const TestimonialsPage: React.FC<TestimonialsPageProps> = ({ onNavigate, 
                       <Play className="w-7 h-7 fill-current ml-1" />
                     </div>
                   </div>
-                  <div className="absolute top-3 left-3 bg-[#0284C7] text-white text-[11px] font-bold px-3 py-1 rounded-full shadow-md">
-                    Featured Story
-                  </div>
                   <div className="absolute bottom-3 right-3 bg-black/75 backdrop-blur-xs text-white text-[11px] font-medium px-2.5 py-1 rounded-md">
                     {featuredVideo.duration}
                   </div>
@@ -161,9 +158,6 @@ export const TestimonialsPage: React.FC<TestimonialsPageProps> = ({ onNavigate, 
                     </div>
                     <div className="absolute bottom-2.5 right-2.5 bg-black/75 backdrop-blur-xs text-white text-[10px] font-medium px-2 py-0.5 rounded">
                       {video.duration}
-                    </div>
-                    <div className="absolute top-2.5 left-2.5 bg-white/90 backdrop-blur-xs text-[#0284C7] text-[10px] font-bold px-2 py-0.5 rounded-full">
-                      Video Story
                     </div>
                   </div>
 

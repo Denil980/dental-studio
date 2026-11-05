@@ -220,11 +220,6 @@ export const AwardsPage: React.FC<AwardsPageProps> = ({ onNavigate, onOpenBookin
                   <div className="absolute top-3 right-3 opacity-0 group-hover:opacity-100 transition-opacity bg-white/90 text-[#0284C7] p-1.5 rounded-full shadow-xs">
                     <ZoomIn className="w-3.5 h-3.5" />
                   </div>
-
-                  {/* Year Tag */}
-                  <div className="absolute top-3 left-3 bg-[#0284C7]/10 text-[#0284C7] text-[10px] font-bold px-2.5 py-0.5 rounded-full">
-                    {award.year}
-                  </div>
                 </div>
 
                 {/* Lower Information Area */}

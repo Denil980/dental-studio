@@ -106,9 +106,6 @@ export const TechnologyPage: React.FC<TechnologyPageProps> = ({ onNavigate, onOp
                       alt={tech.title}
                       className="w-full h-full object-cover card-img-zoom group-hover:scale-105 transition-transform duration-700"
                     />
-                    <div className="absolute top-3 left-3 bg-white/95 backdrop-blur-xs text-[#0284C7] text-[11px] font-bold px-3 py-1 rounded-full shadow-xs">
-                      {tech.tag}
-                    </div>
                   </div>
 
                   <div className="p-6 space-y-2">

@@ -263,10 +263,6 @@ export const BlogsPage: React.FC<BlogsPageProps> = ({ onNavigate, onOpenBookingM
                     alt={featuredPost.title}
                     className="w-full h-full object-cover card-img-zoom group-hover:scale-105 transition-transform duration-700"
                   />
-                  <div className="absolute top-4 left-4 bg-[#0284C7] text-white text-xs font-bold px-3 py-1.5 rounded-full shadow-sm flex items-center gap-1.5">
-                    <Sparkles className="w-3.5 h-3.5" />
-                    <span>Featured Article</span>
-                  </div>
                 </div>
 
                 <div className="lg:col-span-5 p-6 sm:p-10 flex flex-col justify-between space-y-6">
@@ -372,9 +368,6 @@ export const BlogsPage: React.FC<BlogsPageProps> = ({ onNavigate, onOpenBookingM
                       alt={post.title}
                       className="w-full h-full object-cover card-img-zoom group-hover:scale-105 transition-transform duration-700"
                     />
-                    <div className="absolute top-3 left-3 bg-white/95 backdrop-blur-xs text-[#0284C7] text-[11px] font-bold px-3 py-1 rounded-full shadow-xs">
-                      {post.category}
-                    </div>
                   </div>
 
                   <div className="p-6 space-y-3">

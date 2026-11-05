@@ -160,9 +160,6 @@ export const TreatmentsPage: React.FC<TreatmentsPageProps> = ({
                             className="w-full h-full object-cover card-img-zoom group-hover:scale-105 transition-transform duration-700"
                           />
                           <div className="absolute inset-0 bg-gradient-to-t from-slate-950/50 via-transparent to-transparent" />
-                          <div className="absolute top-3 left-3 bg-white/95 backdrop-blur-xs px-3 py-1 rounded-full text-xs font-bold text-[#0284C7] shadow-xs">
-                            {category.name}
-                          </div>
                         </div>
 
                         {/* Content */}

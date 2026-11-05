@@ -504,9 +504,6 @@ export const HomePage: React.FC<HomePageProps> = ({
                       alt={item.title}
                       className="w-full h-full object-cover card-img-zoom group-hover:scale-105 transition-transform duration-700"
                     />
-                    <div className="absolute top-3 left-3 bg-[#0284C7] text-white text-[11px] font-bold px-3 py-1 rounded-full shadow-md">
-                      {item.tag}
-                    </div>
                   </div>
 
                   <div className="p-5 space-y-2">
