@@ -1,19 +1,51 @@
 @import "tailwindcss";
 
+@theme {
+  --font-heading: 'Playfair Display', Georgia, serif;
+  --font-serif: 'Playfair Display', Georgia, serif;
+  --font-sans: 'Poppins', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-body: 'Poppins', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
 @layer base {
+  :root {
+    --font-heading: 'Playfair Display', Georgia, serif;
+    --font-body: 'Poppins', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  }
+
   body {
     font-family: 'Poppins', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    color: #1e293b;
+    background-color: #f8fafc;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
 
   /* Headings strictly use Playfair Display */
-  h1, h2, h3, h4, h5, h6, .font-heading {
-    font-family: 'Playfair Display', Georgia, serif;
-    letter-spacing: -0.015em;
+  h1, h2, h3, h4, h5, h6, 
+  .font-heading, 
+  [class*="font-heading"], 
+  [class*="font-serif"] {
+    font-family: 'Playfair Display', Georgia, serif !important;
+    letter-spacing: -0.012em;
   }
 
-  /* Descriptions, small text, labels, and UI elements strictly use Poppins */
-  p, span, label, input, select, textarea, button, a, li, .font-body {
+  /* Descriptions, small text, labels, form controls, and UI elements strictly use Poppins */
+  p, span, label, input, select, textarea, button, a, li, dd, dt, 
+  .font-body, 
+  [class*="font-body"], 
+  [class*="font-sans"] {
     font-family: 'Poppins', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  }
+
+  /* Ensure child spans and tags inside headings strictly inherit Playfair Display */
+  h1 *, h2 *, h3 *, h4 *, h5 *, h6 * {
+    font-family: inherit !important;
+  }
+
+  /* Allow explicit span/div font-heading override */
+  span.font-heading, a.font-heading, div.font-heading, p.font-heading {
+    font-family: 'Playfair Display', Georgia, serif !important;
   }
 }
 
@@ -43,6 +75,104 @@
 
 html {
   scroll-behavior: smooth;
+}
+
+/* -------------------------------------------------------------
+ * Modern Design System Enhancements
+ * ------------------------------------------------------------- */
+
+/* Glassmorphism panels */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.88);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(224, 242, 254, 0.85);
+  box-shadow: 0 10px 30px -10px rgba(2, 132, 199, 0.08);
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(226, 232, 240, 0.85);
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.glass-card:hover {
+  border-color: rgba(56, 189, 248, 0.6);
+  box-shadow: 0 20px 40px -12px rgba(2, 132, 199, 0.12);
+  transform: translateY(-4px);
+}
+
+/* Modern luxury gradient borders */
+.gradient-border-card {
+  position: relative;
+  background: #ffffff;
+  border-radius: 1.5rem;
+  box-shadow: 0 8px 30px -6px rgba(2, 132, 199, 0.06);
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.gradient-border-card::before {
+  content: '';
+  position: absolute;
+  inset: -1px;
+  border-radius: calc(1.5rem + 1px);
+  padding: 1px;
+  background: linear-gradient(135deg, rgba(2, 132, 199, 0.3), rgba(224, 242, 254, 0.4), rgba(56, 189, 248, 0.2));
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+}
+
+/* Floating teeth gentle animation */
+@keyframes toothFloatSlow {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-10px) rotate(3deg);
+  }
+}
+
+@keyframes toothFloatReverse {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(10px) rotate(-3deg);
+  }
+}
+
+.animate-tooth-float-1 {
+  animation: toothFloatSlow 9s ease-in-out infinite;
+}
+
+.animate-tooth-float-2 {
+  animation: toothFloatReverse 11s ease-in-out infinite;
+}
+
+.animate-tooth-float-3 {
+  animation: toothFloatSlow 10s ease-in-out infinite 1.5s;
+}
+
+.animate-tooth-float-4 {
+  animation: toothFloatReverse 12s ease-in-out infinite 2s;
+}
+
+/* Wave line subtle shimmer */
+@keyframes waveShimmer {
+  0%, 100% {
+    opacity: 0.85;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+.animate-wave-shimmer {
+  animation: waveShimmer 8s ease-in-out infinite;
 }
 
 /* -------------------------------------------------------------

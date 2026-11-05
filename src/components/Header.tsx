@@ -27,7 +27,7 @@ export const Header: React.FC<HeaderProps> = ({
   };
 
   return (
-    <header className="sticky top-0 z-50 bg-white border-b border-slate-100 shadow-xs select-none">
+    <header className="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-sky-100/80 shadow-xs select-none transition-all duration-300">
       <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
         
         {/* Dual Brand Logo */}
@@ -38,14 +38,16 @@ export const Header: React.FC<HeaderProps> = ({
           <DentalLogo />
         </div>
 
-        {/* Desktop Navigation Links (Clean, No Dropdown) */}
-        <nav className="hidden lg:flex items-center gap-7">
+        {/* Desktop Navigation Links */}
+        <nav className="hidden lg:flex items-center gap-1.5 xl:gap-2">
           
           {/* Home */}
           <button
             onClick={() => handleNav('home')}
-            className={`text-[15px] font-semibold transition-colors cursor-pointer py-2 ${
-              currentPage === 'home' ? 'text-[#0284C7]' : 'text-slate-800 hover:text-[#0284C7]'
+            className={`px-3.5 py-2 rounded-full text-[14px] font-semibold transition-all duration-200 cursor-pointer ${
+              currentPage === 'home' 
+                ? 'bg-sky-50 text-[#0284C7] shadow-xs' 
+                : 'text-slate-700 hover:text-[#0284C7] hover:bg-sky-50/50'
             }`}
           >
             Home
@@ -54,8 +56,10 @@ export const Header: React.FC<HeaderProps> = ({
           {/* About */}
           <button
             onClick={() => handleNav('about')}
-            className={`text-[15px] font-semibold transition-colors cursor-pointer py-2 ${
-              currentPage === 'about' ? 'text-[#0284C7]' : 'text-slate-800 hover:text-[#0284C7]'
+            className={`px-3.5 py-2 rounded-full text-[14px] font-semibold transition-all duration-200 cursor-pointer ${
+              currentPage === 'about' 
+                ? 'bg-sky-50 text-[#0284C7] shadow-xs' 
+                : 'text-slate-700 hover:text-[#0284C7] hover:bg-sky-50/50'
             }`}
           >
             About
@@ -64,10 +68,10 @@ export const Header: React.FC<HeaderProps> = ({
           {/* Treatments */}
           <button
             onClick={() => handleNav('treatments')}
-            className={`text-[15px] font-semibold transition-colors cursor-pointer py-2 ${
+            className={`px-3.5 py-2 rounded-full text-[14px] font-semibold transition-all duration-200 cursor-pointer ${
               currentPage === 'treatments' || currentPage === 'treatment-detail' 
-                ? 'text-[#0284C7]' 
-                : 'text-slate-800 hover:text-[#0284C7]'
+                ? 'bg-sky-50 text-[#0284C7] shadow-xs' 
+                : 'text-slate-700 hover:text-[#0284C7] hover:bg-sky-50/50'
             }`}
           >
             Treatments
@@ -76,8 +80,10 @@ export const Header: React.FC<HeaderProps> = ({
           {/* Super Speciality */}
           <button
             onClick={() => handleNav('super-speciality')}
-            className={`text-[15px] font-semibold transition-colors cursor-pointer py-2 ${
-              currentPage === 'super-speciality' ? 'text-[#0284C7]' : 'text-slate-800 hover:text-[#0284C7]'
+            className={`px-3.5 py-2 rounded-full text-[14px] font-semibold transition-all duration-200 cursor-pointer ${
+              currentPage === 'super-speciality' 
+                ? 'bg-sky-50 text-[#0284C7] shadow-xs' 
+                : 'text-slate-700 hover:text-[#0284C7] hover:bg-sky-50/50'
             }`}
           >
             Super Speciality
@@ -86,8 +92,10 @@ export const Header: React.FC<HeaderProps> = ({
           {/* Gallery */}
           <button
             onClick={() => handleNav('gallery')}
-            className={`text-[15px] font-semibold transition-colors cursor-pointer py-2 ${
-              currentPage === 'gallery' ? 'text-[#0284C7]' : 'text-slate-800 hover:text-[#0284C7]'
+            className={`px-3.5 py-2 rounded-full text-[14px] font-semibold transition-all duration-200 cursor-pointer ${
+              currentPage === 'gallery' 
+                ? 'bg-sky-50 text-[#0284C7] shadow-xs' 
+                : 'text-slate-700 hover:text-[#0284C7] hover:bg-sky-50/50'
             }`}
           >
             Gallery
@@ -96,8 +104,10 @@ export const Header: React.FC<HeaderProps> = ({
           {/* Patient Stories */}
           <button
             onClick={() => handleNav('testimonials')}
-            className={`text-[15px] font-semibold transition-colors cursor-pointer py-2 ${
-              currentPage === 'testimonials' ? 'text-[#0284C7]' : 'text-slate-800 hover:text-[#0284C7]'
+            className={`px-3.5 py-2 rounded-full text-[14px] font-semibold transition-all duration-200 cursor-pointer ${
+              currentPage === 'testimonials' 
+                ? 'bg-sky-50 text-[#0284C7] shadow-xs' 
+                : 'text-slate-700 hover:text-[#0284C7] hover:bg-sky-50/50'
             }`}
           >
             Patient Stories
@@ -106,8 +116,10 @@ export const Header: React.FC<HeaderProps> = ({
           {/* Contact */}
           <button
             onClick={() => handleNav('contact')}
-            className={`text-[15px] font-semibold transition-colors cursor-pointer py-2 ${
-              currentPage === 'contact' ? 'text-[#0284C7]' : 'text-slate-800 hover:text-[#0284C7]'
+            className={`px-3.5 py-2 rounded-full text-[14px] font-semibold transition-all duration-200 cursor-pointer ${
+              currentPage === 'contact' 
+                ? 'bg-sky-50 text-[#0284C7] shadow-xs' 
+                : 'text-slate-700 hover:text-[#0284C7] hover:bg-sky-50/50'
             }`}
           >
             Contact

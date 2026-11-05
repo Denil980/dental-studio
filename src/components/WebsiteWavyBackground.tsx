@@ -69,11 +69,27 @@ export const WebsiteWavyBackground: React.FC = () => {
       className="fixed inset-0 pointer-events-none z-0 overflow-hidden select-none"
     >
       {/* -------------------------------------------------------------
+       * Ambient Luxury Clinic Glow Spheres
+       * ------------------------------------------------------------- */}
+      <div 
+        className="absolute top-[-10%] right-[-5%] w-[650px] h-[650px] rounded-full blur-[120px] opacity-40 pointer-events-none"
+        style={{
+          background: 'radial-gradient(circle, rgba(56, 189, 248, 0.18) 0%, rgba(2, 132, 199, 0.08) 50%, transparent 70%)'
+        }}
+      />
+      <div 
+        className="absolute bottom-[-10%] left-[-5%] w-[600px] h-[600px] rounded-full blur-[130px] opacity-35 pointer-events-none"
+        style={{
+          background: 'radial-gradient(circle, rgba(14, 165, 233, 0.15) 0%, rgba(224, 242, 254, 0.1) 50%, transparent 70%)'
+        }}
+      />
+
+      {/* -------------------------------------------------------------
        * 1. WAVY FADED TEXTURE OF BLUE, BLACK & GRAY LINES
        * Perfectly balanced: easily visible, yet soft & faded so text is 100% readable
        * ------------------------------------------------------------- */}
       <svg
-        className="absolute inset-0 w-full h-full object-cover opacity-85"
+        className="absolute inset-0 w-full h-full object-cover opacity-85 animate-wave-shimmer"
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 1440 900"
         preserveAspectRatio="none"
@@ -230,7 +246,7 @@ export const WebsiteWavyBackground: React.FC = () => {
       
       {/* Tooth 1: Upper Left Quadrant */}
       <div
-        className="absolute opacity-45 hover:opacity-75 transition-opacity"
+        className="absolute opacity-45 hover:opacity-80 transition-opacity animate-tooth-float-1"
         style={{
           top: '11%',
           left: '6%',
@@ -243,7 +259,7 @@ export const WebsiteWavyBackground: React.FC = () => {
 
       {/* Tooth 2: Upper Right Quadrant (Generous distance from Tooth 1) */}
       <div
-        className="absolute opacity-45 hover:opacity-75 transition-opacity"
+        className="absolute opacity-45 hover:opacity-80 transition-opacity animate-tooth-float-2"
         style={{
           top: '32%',
           right: '7%',
@@ -256,7 +272,7 @@ export const WebsiteWavyBackground: React.FC = () => {
 
       {/* Tooth 3: Lower Left Quadrant (Generous distance from Tooth 2) */}
       <div
-        className="absolute opacity-45 hover:opacity-75 transition-opacity"
+        className="absolute opacity-45 hover:opacity-80 transition-opacity animate-tooth-float-3"
         style={{
           top: '63%',
           left: '8%',
@@ -269,7 +285,7 @@ export const WebsiteWavyBackground: React.FC = () => {
 
       {/* Tooth 4: Lower Right Quadrant (Generous distance from Tooth 3 & 2) */}
       <div
-        className="absolute opacity-45 hover:opacity-75 transition-opacity"
+        className="absolute opacity-45 hover:opacity-80 transition-opacity animate-tooth-float-4"
         style={{
           top: '83%',
           right: '9%',
