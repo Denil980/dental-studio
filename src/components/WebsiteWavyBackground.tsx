@@ -1,11 +1,12 @@
 import React from 'react';
 
 /**
- * Executive Studio Background
- * Professional, human-designed architectural clinic atmosphere:
- * - Subtle ambient luminescence (soft clinical sky & pure porcelain)
- * - Ultra-fine precision micro-grid matrix (DentMatrix precision dental theme)
- * - Whisper-soft ambient gradient caustics with zero cartoon or vector clutter
+ * Ultra-Luxury Architectural Clinic Background
+ * Pure, human-designed quiet luxury atmosphere:
+ * - Serene optical light diffusion (gentle morning clinic daylight)
+ * - Film-grade micro-grain texture that adds organic warmth and removes synthetic digital flatness
+ * - Subtle precision alignment guides framing the content with architectural poise
+ * - Completely free of cartoon doodles, wavy line vectors, or synthetic AI clutter
  */
 export const WebsiteWavyBackground: React.FC = () => {
   return (
@@ -13,78 +14,66 @@ export const WebsiteWavyBackground: React.FC = () => {
       aria-hidden="true"
       className="fixed inset-0 pointer-events-none z-0 overflow-hidden select-none"
     >
-      {/* 1. Subtle Precision Medical Grid (Whisper-soft 64px matrix) */}
+      {/* 1. Base Alabaster/Porcelain Foundation with Soft Vignette */}
       <div 
-        className="absolute inset-0 opacity-[0.35]"
+        className="absolute inset-0 bg-[#F9FBFC]" 
+      />
+
+      {/* 2. Soft Natural Diffuse Light Blooms (Simulating studio daylight) */}
+      {/* Upper-right soft sky ambiance */}
+      <div 
+        className="absolute -top-[20%] right-[-10%] w-[900px] h-[900px] rounded-full pointer-events-none"
+        style={{
+          background: 'radial-gradient(circle at 50% 50%, rgba(224, 242, 254, 0.45) 0%, rgba(240, 249, 255, 0.2) 45%, transparent 75%)',
+          filter: 'blur(80px)'
+        }}
+      />
+      {/* Mid-left warm luminous fill */}
+      <div 
+        className="absolute top-[35%] -left-[15%] w-[800px] h-[800px] rounded-full pointer-events-none"
+        style={{
+          background: 'radial-gradient(circle at 50% 50%, rgba(241, 245, 249, 0.6) 0%, rgba(224, 242, 254, 0.25) 45%, transparent 70%)',
+          filter: 'blur(90px)'
+        }}
+      />
+      {/* Lower subtle depth accent */}
+      <div 
+        className="absolute -bottom-[20%] right-[10%] w-[950px] h-[750px] rounded-full pointer-events-none"
+        style={{
+          background: 'radial-gradient(circle at 50% 50%, rgba(224, 242, 254, 0.35) 0%, rgba(248, 250, 252, 0.2) 50%, transparent 75%)',
+          filter: 'blur(100px)'
+        }}
+      />
+
+      {/* 3. Subtle Architectural Precision Grid (Whisper-soft 56px hairline) */}
+      <div 
+        className="absolute inset-0 opacity-[0.28]"
         style={{
           backgroundImage: `
-            linear-gradient(to right, rgba(2, 132, 199, 0.04) 1px, transparent 1px),
-            linear-gradient(to bottom, rgba(2, 132, 199, 0.04) 1px, transparent 1px)
+            linear-gradient(to right, rgba(148, 163, 184, 0.08) 1px, transparent 1px),
+            linear-gradient(to bottom, rgba(148, 163, 184, 0.08) 1px, transparent 1px)
           `,
-          backgroundSize: '64px 64px',
-          maskImage: 'radial-gradient(ellipse 90% 80% at 50% 40%, black 40%, transparent 95%)',
-          WebkitMaskImage: 'radial-gradient(ellipse 90% 80% at 50% 40%, black 40%, transparent 95%)'
+          backgroundSize: '56px 56px',
+          maskImage: 'radial-gradient(ellipse 85% 75% at 50% 45%, black 25%, transparent 90%)',
+          WebkitMaskImage: 'radial-gradient(ellipse 85% 75% at 50% 45%, black 25%, transparent 90%)'
         }}
       />
 
-      {/* 2. Soft Ambient Luminescence Orbs (Gentle depth & luxury warmth) */}
-      <div 
-        className="absolute -top-[15%] right-[-5%] w-[720px] h-[720px] rounded-full blur-[140px] pointer-events-none"
-        style={{
-          background: 'radial-gradient(circle, rgba(56, 189, 248, 0.08) 0%, rgba(2, 132, 199, 0.03) 50%, transparent 75%)'
-        }}
-      />
-      <div 
-        className="absolute top-[45%] -left-[10%] w-[680px] h-[680px] rounded-full blur-[150px] pointer-events-none"
-        style={{
-          background: 'radial-gradient(circle, rgba(2, 132, 199, 0.05) 0%, rgba(224, 242, 254, 0.04) 50%, transparent 75%)'
-        }}
-      />
-      <div 
-        className="absolute -bottom-[15%] right-[15%] w-[800px] h-[600px] rounded-full blur-[160px] pointer-events-none"
-        style={{
-          background: 'radial-gradient(circle, rgba(14, 165, 233, 0.06) 0%, rgba(240, 249, 255, 0.02) 60%, transparent 80%)'
-        }}
-      />
-
-      {/* 3. Delicate Organic Wave Accents (Ultra-soft, fluid, human-crafted) */}
-      <svg
-        className="absolute inset-0 w-full h-full object-cover opacity-30"
+      {/* 4. Film Grain / Micro-Texture Overlay (Removes flat digital/AI sterility) */}
+      <svg 
+        className="absolute inset-0 w-full h-full opacity-[0.025] mix-blend-overlay pointer-events-none"
         xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 1440 900"
-        preserveAspectRatio="none"
       >
-        <defs>
-          <linearGradient id="waveDelicateBlue" x1="0%" y1="0%" x2="100%" y2="100%">
-            <stop offset="0%" stopColor="#0284C7" stopOpacity="0.08" />
-            <stop offset="50%" stopColor="#38BDF8" stopOpacity="0.12" />
-            <stop offset="100%" stopColor="#0284C7" stopOpacity="0.06" />
-          </linearGradient>
-          <linearGradient id="waveDelicateSlate" x1="100%" y1="0%" x2="0%" y2="100%">
-            <stop offset="0%" stopColor="#64748B" stopOpacity="0.06" />
-            <stop offset="50%" stopColor="#94A3B8" stopOpacity="0.08" />
-            <stop offset="100%" stopColor="#64748B" stopOpacity="0.04" />
-          </linearGradient>
-        </defs>
-
-        <path
-          d="M-40,120 C280,240 560,-10 860,110 C1160,230 1340,50 1520,130"
-          fill="none"
-          stroke="url(#waveDelicateBlue)"
-          strokeWidth="1.2"
-        />
-        <path
-          d="M-60,480 C260,360 580,590 880,470 C1180,350 1360,510 1540,440"
-          fill="none"
-          stroke="url(#waveDelicateSlate)"
-          strokeWidth="1"
-        />
-        <path
-          d="M-50,780 C240,880 540,710 840,820 C1140,920 1350,760 1530,830"
-          fill="none"
-          stroke="url(#waveDelicateBlue)"
-          strokeWidth="1.2"
-        />
+        <filter id="studioNoiseFilter">
+          <feTurbulence 
+            type="fractalNoise" 
+            baseFrequency="0.8" 
+            numOctaves="3" 
+            stitchTiles="stitch" 
+          />
+          <feColorMatrix type="saturate" values="0" />
+        </filter>
+        <rect width="100%" height="100%" filter="url(#studioNoiseFilter)" />
       </svg>
     </aside>
   );

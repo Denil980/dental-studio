@@ -115,11 +115,7 @@ export const HomePage: React.FC<HomePageProps> = ({
     <div className="space-y-16 pb-20">
       
       {/* Hero Section - Clean, Premium & Elegant */}
-      <section className="relative overflow-hidden bg-gradient-to-b from-sky-50/80 via-white to-sky-50/40 pt-10 pb-16 lg:pt-14 lg:pb-24 border-b border-sky-100/50">
-        {/* Soft atmospheric ambient light glows */}
-        <div className="absolute top-10 right-10 w-[500px] h-[500px] bg-gradient-to-br from-sky-200/30 to-blue-100/10 rounded-full blur-3xl pointer-events-none" />
-        <div className="absolute -bottom-10 left-10 w-96 h-96 bg-gradient-to-tr from-sky-100/40 to-transparent rounded-full blur-3xl pointer-events-none" />
-
+      <section className="relative overflow-hidden bg-gradient-to-b from-white via-sky-50/20 to-white pt-10 pb-16 lg:pt-14 lg:pb-24 border-b border-slate-100">
         <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
             
@@ -144,15 +140,15 @@ export const HomePage: React.FC<HomePageProps> = ({
               <div className="flex flex-wrap items-center gap-4 pt-2">
                 <button
                   onClick={onOpenBookingModal}
-                  className="px-7 py-3.5 rounded-full bg-[#0284C7] hover:bg-[#0369A1] text-white font-bold text-sm shadow-lg shadow-sky-500/25 transition-all transform hover:scale-[1.02] active:scale-95 cursor-pointer flex items-center gap-2"
+                  className="px-7 py-3.5 rounded-full bg-slate-900 hover:bg-[#0284C7] text-white font-medium text-sm shadow-md shadow-slate-900/10 hover:shadow-lg hover:shadow-sky-500/20 transition-all duration-300 transform hover:scale-[1.02] active:scale-95 cursor-pointer flex items-center gap-2"
                 >
-                  <Calendar className="w-4 h-4" />
+                  <Calendar className="w-4 h-4 text-sky-400" />
                   <span>Book Appointment</span>
                 </button>
 
                 <button
                   onClick={() => onNavigate('treatments')}
-                  className="px-7 py-3.5 rounded-full bg-white hover:bg-sky-50 text-slate-800 border border-slate-300 font-bold text-sm transition-all hover:border-[#0284C7] hover:scale-[1.02] active:scale-95 cursor-pointer flex items-center gap-2 group"
+                  className="px-7 py-3.5 rounded-full bg-white hover:bg-slate-50 text-slate-800 border border-slate-200 hover:border-slate-300 font-medium text-sm transition-all duration-300 hover:scale-[1.02] active:scale-95 cursor-pointer flex items-center gap-2 group shadow-2xs"
                 >
                   <span>Our 6 Main Treatments</span>
                   <ArrowRight className="w-4 h-4 text-[#0284C7] group-hover:translate-x-1 transition-transform" />
@@ -199,18 +195,18 @@ export const HomePage: React.FC<HomePageProps> = ({
 
       {/* Doctor Highlight Section ("Meet the Expert") */}
       <section className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="bg-gradient-to-br from-sky-50/70 via-white to-sky-50/40 rounded-3xl p-6 sm:p-10 lg:p-12 border border-sky-100 shadow-sm relative overflow-hidden">
+        <div className="bg-white rounded-3xl p-6 sm:p-10 lg:p-12 border border-slate-200/80 shadow-[0_2px_16px_rgba(0,0,0,0.03)] relative overflow-hidden">
           <div className="grid grid-cols-1 md:grid-cols-12 gap-8 lg:gap-12 items-center">
             
             {/* Doctor Photo */}
             <div className="md:col-span-5 flex justify-center">
-              <div className="relative w-full max-w-sm aspect-[4/5] rounded-2xl overflow-hidden shadow-lg border-4 border-white">
+              <div className="relative w-full max-w-sm aspect-[4/5] rounded-2xl overflow-hidden shadow-lg border-4 border-slate-50">
                 <img
                   src={DOCTOR_INFO.image}
                   alt={DOCTOR_INFO.name}
                   className="w-full h-full object-cover object-top"
                 />
-                <div className="absolute bottom-3 left-3 right-3 bg-slate-900/85 backdrop-blur-xs text-white p-2.5 rounded-xl text-center">
+                <div className="absolute bottom-3 left-3 right-3 bg-slate-900/90 backdrop-blur-md text-white p-3 rounded-xl text-center">
                   <p className="text-xs font-bold">{DOCTOR_INFO.name}</p>
                   <p className="text-[10px] text-sky-300 font-medium">{DOCTOR_INFO.title}</p>
                 </div>
@@ -223,7 +219,7 @@ export const HomePage: React.FC<HomePageProps> = ({
                 {DOCTOR_INFO.name}
               </h2>
 
-              <p className="text-base font-bold text-[#0284C7]">
+              <p className="text-base font-medium text-[#0284C7]">
                 {DOCTOR_INFO.title}
               </p>
 
@@ -234,7 +230,7 @@ export const HomePage: React.FC<HomePageProps> = ({
               <div className="pt-2 flex flex-wrap gap-4">
                 <button
                   onClick={() => onNavigate('about')}
-                  className="px-6 py-3 rounded-full bg-[#0284C7] hover:bg-[#0369A1] text-white font-bold text-xs tracking-wider uppercase shadow-md shadow-sky-500/20 flex items-center gap-2 transition-all cursor-pointer"
+                  className="px-6 py-3 rounded-full bg-slate-900 hover:bg-[#0284C7] text-white font-medium text-xs tracking-wider uppercase shadow-xs flex items-center gap-2 transition-all duration-300 cursor-pointer"
                 >
                   <span>Know More</span>
                   <ArrowRight className="w-3.5 h-3.5" />
@@ -242,7 +238,7 @@ export const HomePage: React.FC<HomePageProps> = ({
 
                 <button
                   onClick={onOpenBookingModal}
-                  className="px-6 py-3 rounded-full bg-white hover:bg-sky-50 text-slate-800 border border-slate-300 font-bold text-xs tracking-wider uppercase transition-all cursor-pointer"
+                  className="px-6 py-3 rounded-full bg-white hover:bg-slate-50 text-slate-800 border border-slate-200 hover:border-slate-300 font-medium text-xs tracking-wider uppercase transition-all duration-300 cursor-pointer shadow-2xs"
                 >
                   Consult Dr. Aslam
                 </button>
@@ -434,7 +430,7 @@ export const HomePage: React.FC<HomePageProps> = ({
                 />
                 <div>
                   <h4 className="text-base font-bold text-slate-900">{featured.patientName}</h4>
-                  <p className="text-xs font-bold text-[#0284C7] uppercase tracking-wider">{featured.treatment}</p>
+                  <p className="text-xs text-slate-500 font-medium">{featured.treatment}</p>
                 </div>
               </div>
             </div>
@@ -528,7 +524,7 @@ export const HomePage: React.FC<HomePageProps> = ({
 
       {/* Contact & Booking Section */}
       <section className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="bg-gradient-to-br from-sky-50/70 via-white to-sky-50/40 rounded-3xl p-6 sm:p-10 lg:p-12 border border-sky-100 shadow-sm space-y-10">
+        <div className="bg-white rounded-3xl p-6 sm:p-10 lg:p-12 border border-slate-200/80 shadow-[0_2px_16px_rgba(0,0,0,0.03)] space-y-10">
           
           <div className="text-center max-w-2xl mx-auto space-y-2">
             <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
@@ -553,8 +549,8 @@ export const HomePage: React.FC<HomePageProps> = ({
                     >
                       <div className="flex items-center justify-between">
                         <h4 className="text-base font-bold text-slate-900">{clinic.name}</h4>
-                        <span className="text-[11px] font-bold text-[#0284C7] bg-sky-50 px-2.5 py-0.5 rounded-full">
-                          Open Mon-Sat
+                        <span className="text-[11px] font-medium text-slate-500">
+                          Mon – Sat
                         </span>
                       </div>
 
