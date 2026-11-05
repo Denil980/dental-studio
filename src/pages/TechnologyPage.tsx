@@ -112,9 +112,6 @@ export const TechnologyPage: React.FC<TechnologyPageProps> = ({ onNavigate, onOp
                   </div>
 
                   <div className="p-6 space-y-2">
-                    <span className="text-[11px] font-bold text-sky-700 uppercase tracking-wider">
-                      {tech.subtitle}
-                    </span>
                     <h4 className="text-xl font-bold text-slate-900 font-heading group-hover:text-[#0284C7] transition-colors">
                       {tech.title}
                     </h4>

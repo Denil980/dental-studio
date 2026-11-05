@@ -112,7 +112,6 @@ export const TreatmentDetailPage: React.FC<TreatmentDetailPageProps> = ({
                   className="w-full h-full object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-950/70 via-transparent to-transparent flex flex-col justify-end p-6 text-white">
-                  <span className="text-[11px] font-bold text-sky-300 uppercase tracking-wider">Dental Studio & DentMatrix</span>
                   <p className="text-sm font-bold">{currentTreatment.name}</p>
                 </div>
               </div>
@@ -155,10 +154,6 @@ export const TreatmentDetailPage: React.FC<TreatmentDetailPageProps> = ({
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
             
             <div className="lg:col-span-7 space-y-4">
-              <span className="text-xs font-bold tracking-widest uppercase text-[#0284C7] block">
-                Clinical Overview & Protocol
-              </span>
-
               <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                 About {currentTreatment.name}
               </h2>

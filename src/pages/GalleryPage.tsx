@@ -115,9 +115,6 @@ export const GalleryPage: React.FC<GalleryPageProps> = ({
                   </div>
 
                   <div className="space-y-1.5 px-1">
-                    <span className="text-[11px] font-bold text-[#0284C7] uppercase tracking-wider block">
-                      {item.category}
-                    </span>
                     <h3 className="text-lg font-bold text-slate-900 leading-snug">
                       {item.title}
                     </h3>

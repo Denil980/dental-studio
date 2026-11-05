@@ -56,10 +56,6 @@ export const TestimonialsPage: React.FC<TestimonialsPageProps> = ({ onNavigate, 
         
         <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4 border-b border-sky-100 pb-4">
           <div className="space-y-1">
-            <div className="inline-flex items-center gap-1.5 text-xs font-bold text-[#0284C7] uppercase tracking-wider">
-              <Video className="w-4 h-4" />
-              <span>Real Patient Interviews ({VIDEO_REVIEWS.length} Videos)</span>
-            </div>
             <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight font-heading">
               Featured Video Testimonials
             </h2>
@@ -182,10 +178,6 @@ export const TestimonialsPage: React.FC<TestimonialsPageProps> = ({ onNavigate, 
                     <h4 className="text-base font-bold text-slate-900 group-hover:text-[#0284C7] transition-colors leading-snug line-clamp-1">
                       {video.patientName}
                     </h4>
-                    
-                    <p className="text-[11px] font-bold text-[#0284C7] uppercase tracking-wider line-clamp-1">
-                      {video.treatment}
-                    </p>
 
                     <p className="text-xs text-slate-600 line-clamp-2 leading-relaxed italic">
                       "{video.quote}"
@@ -243,10 +235,6 @@ export const TestimonialsPage: React.FC<TestimonialsPageProps> = ({ onNavigate, 
         
         <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4 border-b border-sky-100 pb-4">
           <div className="space-y-1">
-            <div className="inline-flex items-center gap-1.5 text-xs font-bold text-[#0284C7] uppercase tracking-wider">
-              <CheckCircle2 className="w-4 h-4" />
-              <span>Verified Patient Feedback ({TEXT_REVIEWS.length} Reviews)</span>
-            </div>
             <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight font-heading">
               Written Patient Experiences
             </h2>
@@ -273,10 +261,6 @@ export const TestimonialsPage: React.FC<TestimonialsPageProps> = ({ onNavigate, 
                       <span>Verified Review</span>
                     </span>
                   </div>
-
-                  <p className="text-xs font-bold text-[#0284C7] uppercase tracking-wider">
-                    {item.treatment}
-                  </p>
 
                   <p className="text-sm sm:text-base text-slate-700 leading-relaxed italic font-body">
                     "{item.quote}"

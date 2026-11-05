@@ -138,7 +138,6 @@ export const NewsletterPage: React.FC<NewsletterPageProps> = ({ onNavigate, onOp
             <div className="max-w-2xl space-y-6 relative z-10">
               
               <div className="space-y-2">
-                <span className="text-xs font-bold tracking-widest uppercase text-sky-300">Join 4,200+ Readers Across Mumbai</span>
                 <h3 className="text-2xl sm:text-4xl font-bold font-heading leading-tight">
                   Stay Informed on Advanced Dental Health & Smile Transformations
                 </h3>

@@ -52,7 +52,6 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate, onOpenBookingM
                 <div className="absolute inset-0 bg-slate-950/20 flex items-center justify-center pointer-events-none">
                   <div className="bg-white/95 backdrop-blur-md px-4 py-2 rounded-xl text-center shadow-md">
                     <p className="text-xs font-bold text-slate-900">Dental Studio Reception</p>
-                    <p className="text-[10px] text-[#0284C7] font-bold uppercase tracking-wider">World Class Clinic</p>
                   </div>
                 </div>
               </div>

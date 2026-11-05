@@ -141,9 +141,6 @@ export const TreatmentsPage: React.FC<TreatmentsPageProps> = ({
                     <p className="text-xs text-slate-500">{category.shortDesc}</p>
                   </div>
                 </div>
-                <span className="text-xs font-bold text-[#0284C7] bg-sky-50 px-3 py-1 rounded-full w-fit">
-                  {category.items.length} {category.items.length === 1 ? 'Specialty' : 'Sub-Treatments'}
-                </span>
               </div>
 
               {/* Sub-Treatments Cards Grid */}

@@ -144,10 +144,6 @@ export const SuperSpecialityPage: React.FC<SuperSpecialityPageProps> = ({
             
             {/* Details */}
             <div className="lg:col-span-7 space-y-5">
-              <span className="text-xs font-bold tracking-widest uppercase text-[#0284C7] block">
-                {current.tagline}
-              </span>
-
               <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
                 {current.title}
               </h2>

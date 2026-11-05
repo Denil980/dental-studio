@@ -219,10 +219,6 @@ export const HomePage: React.FC<HomePageProps> = ({
 
             {/* Doctor Info */}
             <div className="md:col-span-7 space-y-4">
-              <span className="text-xs font-bold tracking-widest uppercase text-[#0284C7] block">
-                Meet the Expert
-              </span>
-
               <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
                 {DOCTOR_INFO.name}
               </h2>
@@ -260,9 +256,6 @@ export const HomePage: React.FC<HomePageProps> = ({
       {/* 6 Key Treatments Section (Matching Image 1) */}
       <section className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
         <div className="text-center space-y-2 max-w-2xl mx-auto">
-          <span className="text-xs font-bold tracking-widest uppercase text-[#0284C7] block">
-            Comprehensive Specialties
-          </span>
           <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
             Our Key Treatments
           </h2>
@@ -287,13 +280,10 @@ export const HomePage: React.FC<HomePageProps> = ({
                   className="bg-white rounded-3xl p-6 border border-slate-200 hover:border-[#0284C7] shadow-xs premium-card cursor-pointer group flex flex-col justify-between h-full"
                 >
                   <div>
-                    <div className="flex items-center justify-between mb-4">
+                    <div className="mb-4">
                       <div className="w-12 h-12 rounded-2xl bg-sky-50 text-[#0284C7] group-hover:bg-[#0284C7] group-hover:text-white flex items-center justify-center transition-colors">
                         <Icon className="w-6 h-6" />
                       </div>
-                      <span className="text-[11px] font-bold text-[#0284C7] bg-sky-50 px-2.5 py-1 rounded-full">
-                        {cat.items.length} {cat.items.length === 1 ? 'Procedure' : 'Procedures'}
-                      </span>
                     </div>
 
                     <h3 className="text-xl font-bold text-slate-900 group-hover:text-[#0284C7] transition-colors mb-2 font-heading">
@@ -331,9 +321,6 @@ export const HomePage: React.FC<HomePageProps> = ({
           
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 relative z-10 border-b border-sky-100 pb-6">
             <div>
-              <span className="text-xs font-bold tracking-widest uppercase text-[#0284C7] block mb-2">
-                Super Speciality Capabilities
-              </span>
               <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight font-heading">
                 Dental Studio Super Speciality
               </h2>
@@ -385,9 +372,6 @@ export const HomePage: React.FC<HomePageProps> = ({
       <section className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
         <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4">
           <div className="space-y-2">
-            <span className="text-xs font-bold tracking-widest uppercase text-[#0284C7] block">
-              Patient Testimonials
-            </span>
             <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
               Hear from Our Happy Patients
             </h2>
@@ -488,9 +472,6 @@ export const HomePage: React.FC<HomePageProps> = ({
       <section className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
         <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4">
           <div className="space-y-2">
-            <span className="text-xs font-bold tracking-widest uppercase text-[#0284C7] block">
-              Transformations
-            </span>
             <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
               Smile Gallery
             </h2>
@@ -529,9 +510,6 @@ export const HomePage: React.FC<HomePageProps> = ({
                   </div>
 
                   <div className="p-5 space-y-2">
-                    <span className="text-[11px] font-bold text-[#0284C7] uppercase tracking-wider block">
-                      {item.category}
-                    </span>
                     <h3 className="text-base font-bold text-slate-900 group-hover:text-[#0284C7] transition-colors line-clamp-1">
                       {item.title}
                     </h3>
@@ -556,9 +534,6 @@ export const HomePage: React.FC<HomePageProps> = ({
         <div className="bg-gradient-to-br from-sky-50/70 via-white to-sky-50/40 rounded-3xl p-6 sm:p-10 lg:p-12 border border-sky-100 shadow-sm space-y-10">
           
           <div className="text-center max-w-2xl mx-auto space-y-2">
-            <span className="text-xs font-bold tracking-widest uppercase text-[#0284C7] block">
-              Visit or Book Online
-            </span>
             <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
               Schedule Your Consultation
             </h2>
@@ -618,10 +593,6 @@ export const HomePage: React.FC<HomePageProps> = ({
 
               {/* Direct helpline card */}
               <div className="bg-gradient-to-br from-[#0284C7] to-sky-800 text-white rounded-2xl p-6 shadow-md space-y-3 premium-card">
-                <div className="flex items-center gap-2 text-sky-100 text-xs font-bold uppercase tracking-wider">
-                  <MedicalCertificationSeal className="w-4 h-4 text-sky-100" />
-                  <span>Immediate Assistance</span>
-                </div>
                 <h4 className="text-lg font-bold">Have an urgent dental inquiry?</h4>
                 <p className="text-xs text-sky-100 leading-relaxed font-body">
                   Call our clinical support desk directly to get answers on treatments, scheduling, or emergency pain relief.

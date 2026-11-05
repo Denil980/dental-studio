@@ -245,10 +245,6 @@ export const AwardsPage: React.FC<AwardsPageProps> = ({ onNavigate, onOpenBookin
         {/* Bottom Practice Banner */}
         <div className="bg-gradient-to-r from-slate-900 to-sky-950 rounded-3xl p-8 sm:p-12 text-white flex flex-col md:flex-row items-center justify-between gap-6 shadow-xl">
           <div className="space-y-2 max-w-xl text-center md:text-left">
-            <div className="flex items-center gap-2 justify-center md:justify-start text-sky-300 text-xs font-bold uppercase tracking-wider">
-              <Trophy className="w-4 h-4" />
-              <span>Multi-Award Winning Practice</span>
-            </div>
             <h3 className="text-2xl sm:text-3xl font-bold font-heading">Experience Award-Winning Dental Care</h3>
             <p className="text-sky-200/80 text-sm leading-relaxed font-body">
               Schedule your consultation with Dr. Aslam Inamdar and experience premier restorative and aesthetic dentistry.
