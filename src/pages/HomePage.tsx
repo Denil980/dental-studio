@@ -178,17 +178,6 @@ export const HomePage: React.FC<HomePageProps> = ({
                     <p className="text-xs text-slate-300 font-body">State-of-the-Art Digital Operatory in Mumbai</p>
                   </div>
                 </div>
-
-                {/* Floating Experience Badge with Premium Slate Gray Styling */}
-                <div className="absolute -top-3 -left-3 sm:-left-4 bg-white/95 backdrop-blur-md px-4 py-2.5 rounded-2xl border border-slate-200/90 shadow-md flex items-center gap-3">
-                  <div className="w-9 h-9 rounded-xl bg-slate-100 text-[#0284C7] flex items-center justify-center font-bold text-sm">
-                    20+
-                  </div>
-                  <div>
-                    <p className="text-xs font-bold text-slate-900 leading-tight">Years Excellence</p>
-                    <p className="text-[10px] text-slate-500">Since 2003</p>
-                  </div>
-                </div>
               </div>
             </div>
 
