@@ -229,7 +229,7 @@ export const CareerPage: React.FC<CareerPageProps> = ({ onNavigate }) => {
           <div className="space-y-6">
             
             <div className="text-center space-y-2">
-              <span className="inline-block px-3.5 py-1 rounded-full bg-sky-50 text-[#0284C7] text-xs font-bold tracking-wider uppercase">
+              <span className="text-xs font-bold tracking-widest uppercase text-[#0284C7] block">
                 Get In Touch With HR
               </span>
               <h3 className="text-2xl sm:text-3xl font-bold font-heading text-slate-900">

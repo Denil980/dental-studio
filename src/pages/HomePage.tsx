@@ -219,9 +219,9 @@ export const HomePage: React.FC<HomePageProps> = ({
 
             {/* Doctor Info */}
             <div className="md:col-span-7 space-y-4">
-              <div className="inline-block px-3 py-1 rounded-full bg-sky-100 text-[#0284C7] text-xs font-bold tracking-wide uppercase">
+              <span className="text-xs font-bold tracking-widest uppercase text-[#0284C7] block">
                 Meet the Expert
-              </div>
+              </span>
 
               <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
                 {DOCTOR_INFO.name}
@@ -260,9 +260,9 @@ export const HomePage: React.FC<HomePageProps> = ({
       {/* 6 Key Treatments Section (Matching Image 1) */}
       <section className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
         <div className="text-center space-y-2 max-w-2xl mx-auto">
-          <div className="inline-block px-3 py-1 rounded-full bg-sky-100 text-[#0284C7] text-xs font-bold tracking-wide uppercase">
+          <span className="text-xs font-bold tracking-widest uppercase text-[#0284C7] block">
             Comprehensive Specialties
-          </div>
+          </span>
           <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
             Our Key Treatments
           </h2>
@@ -331,9 +331,9 @@ export const HomePage: React.FC<HomePageProps> = ({
           
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 relative z-10 border-b border-sky-100 pb-6">
             <div>
-              <div className="inline-block px-3 py-1 rounded-full bg-sky-100 text-[#0284C7] text-xs font-bold tracking-wide uppercase mb-2">
+              <span className="text-xs font-bold tracking-widest uppercase text-[#0284C7] block mb-2">
                 Super Speciality Capabilities
-              </div>
+              </span>
               <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight font-heading">
                 Dental Studio Super Speciality
               </h2>
@@ -385,9 +385,9 @@ export const HomePage: React.FC<HomePageProps> = ({
       <section className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
         <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4">
           <div className="space-y-2">
-            <div className="inline-block px-3 py-1 rounded-full bg-sky-100 text-[#0284C7] text-xs font-bold tracking-wide uppercase">
+            <span className="text-xs font-bold tracking-widest uppercase text-[#0284C7] block">
               Patient Testimonials
-            </div>
+            </span>
             <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
               Hear from Our Happy Patients
             </h2>
@@ -488,9 +488,9 @@ export const HomePage: React.FC<HomePageProps> = ({
       <section className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
         <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4">
           <div className="space-y-2">
-            <div className="inline-block px-3 py-1 rounded-full bg-sky-100 text-[#0284C7] text-xs font-bold tracking-wide uppercase">
+            <span className="text-xs font-bold tracking-widest uppercase text-[#0284C7] block">
               Transformations
-            </div>
+            </span>
             <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
               Smile Gallery
             </h2>
@@ -556,9 +556,9 @@ export const HomePage: React.FC<HomePageProps> = ({
         <div className="bg-gradient-to-br from-sky-50/70 via-white to-sky-50/40 rounded-3xl p-6 sm:p-10 lg:p-12 border border-sky-100 shadow-sm space-y-10">
           
           <div className="text-center max-w-2xl mx-auto space-y-2">
-            <div className="inline-block px-3 py-1 rounded-full bg-sky-100 text-[#0284C7] text-xs font-bold tracking-wide uppercase">
+            <span className="text-xs font-bold tracking-widest uppercase text-[#0284C7] block">
               Visit or Book Online
-            </div>
+            </span>
             <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
               Schedule Your Consultation
             </h2>

@@ -155,9 +155,9 @@ export const TreatmentDetailPage: React.FC<TreatmentDetailPageProps> = ({
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
             
             <div className="lg:col-span-7 space-y-4">
-              <div className="inline-block px-3 py-1 rounded-full bg-sky-100 text-[#0284C7] text-xs font-bold tracking-wide uppercase">
+              <span className="text-xs font-bold tracking-widest uppercase text-[#0284C7] block">
                 Clinical Overview & Protocol
-              </div>
+              </span>
 
               <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                 About {currentTreatment.name}
