@@ -119,24 +119,24 @@ export const AppointmentModal: React.FC<AppointmentModalProps> = ({
               <CheckCircle2 className="w-10 h-10" />
             </div>
             <h4 className="text-2xl font-bold text-slate-900 mb-2 font-heading">Appointment Requested!</h4>
-            <p className="text-slate-600 text-sm max-w-md mb-6 leading-relaxed">
-              Thank you, <span className="font-semibold text-slate-800">{formData.fullName}</span>. Our clinic care coordinator will call you shortly at <span className="font-semibold text-slate-800">{formData.phone}</span> to confirm your slot for <span className="text-[#0284C7] font-bold">{formData.treatment}</span> at our <span className="font-medium text-slate-800">{formData.clinic}</span>.
+            <p className="text-slate-800 text-sm max-w-md mb-6 leading-relaxed">
+              Thank you, <span className="font-semibold text-slate-900">{formData.fullName}</span>. Our clinic care coordinator will call you shortly at <span className="font-semibold text-slate-900">{formData.phone}</span> to confirm your slot for <span className="text-[#0284C7] font-bold">{formData.treatment}</span> at our <span className="font-medium text-slate-900">{formData.clinic}</span>.
             </p>
             <div className="bg-sky-50 border border-sky-100 rounded-2xl p-4 w-full text-left text-sm text-slate-700 mb-6 space-y-2">
               <div className="flex justify-between">
-                <span className="text-slate-500">Selected Clinic:</span>
+                <span className="text-slate-700 font-medium">Selected Clinic:</span>
                 <span className="font-semibold text-slate-900">{formData.clinic}</span>
               </div>
               <div className="flex justify-between">
-                <span className="text-slate-500">Service / Treatment:</span>
+                <span className="text-slate-700 font-medium">Service / Treatment:</span>
                 <span className="font-semibold text-[#0284C7]">{formData.treatment}</span>
               </div>
               <div className="flex justify-between">
-                <span className="text-slate-500">Date:</span>
+                <span className="text-slate-700 font-medium">Date:</span>
                 <span className="font-semibold text-slate-900">{formData.date}</span>
               </div>
               <div className="flex justify-between">
-                <span className="text-slate-500">Time Slot:</span>
+                <span className="text-slate-700 font-medium">Time Slot:</span>
                 <span className="font-semibold text-slate-900">{formData.time}</span>
               </div>
             </div>

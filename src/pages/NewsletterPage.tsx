@@ -121,7 +121,7 @@ export const NewsletterPage: React.FC<NewsletterPageProps> = ({ onNavigate, onOp
               text="The Smile Digest Newsletter"
               className="text-4xl sm:text-5xl font-extrabold text-slate-900 tracking-tight font-heading"
             />
-            <p className="text-base sm:text-lg text-slate-600 leading-relaxed font-body">
+            <p className="text-base sm:text-lg text-slate-800 leading-relaxed font-body">
               Curated by Dr. Aslam Inamdar. Cutting-edge dental implant science, smile aesthetics, patient case studies, and home care innovations delivered once a month.
             </p>
           </div>
@@ -232,7 +232,7 @@ export const NewsletterPage: React.FC<NewsletterPageProps> = ({ onNavigate, onOp
           <div className="flex items-center justify-between pb-3 border-b border-slate-200">
             <div>
               <h3 className="text-2xl font-bold text-slate-900 font-heading">Previous Editions</h3>
-              <p className="text-xs text-slate-500 font-body">Browse highlights from past issues of The Smile Digest.</p>
+              <p className="text-xs text-slate-700 font-body">Browse highlights from past issues of The Smile Digest.</p>
             </div>
             <span className="text-xs font-bold text-[#0284C7] bg-sky-50 px-3 py-1 rounded-full">
               4 Issues Archived
@@ -259,19 +259,19 @@ export const NewsletterPage: React.FC<NewsletterPageProps> = ({ onNavigate, onOp
                       {issue.title}
                     </h4>
 
-                    <p className="text-xs sm:text-sm text-slate-600 leading-relaxed font-body">
+                    <p className="text-xs sm:text-sm text-slate-800 leading-relaxed font-body">
                       {issue.headline}
                     </p>
 
                     <div className="pt-2">
-                      <p className="text-xs text-slate-500 leading-relaxed italic border-l-2 border-sky-300 pl-3">
+                      <p className="text-xs text-slate-700 leading-relaxed italic border-l-2 border-sky-300 pl-3">
                         "{issue.summary}"
                       </p>
                     </div>
 
                     <div className="flex flex-wrap gap-1.5 pt-2">
                       {issue.topics.map((t) => (
-                        <span key={t} className="text-[10px] font-semibold text-slate-600 bg-slate-100 px-2.5 py-1 rounded-md">
+                        <span key={t} className="text-[10px] font-semibold text-slate-800 bg-slate-100 px-2.5 py-1 rounded-md">
                           #{t}
                         </span>
                       ))}
@@ -279,7 +279,7 @@ export const NewsletterPage: React.FC<NewsletterPageProps> = ({ onNavigate, onOp
                   </div>
 
                   <div className="pt-6 mt-4 border-t border-slate-100 flex items-center justify-between text-xs">
-                    <span className="text-slate-400">{issue.readTime}</span>
+                    <span className="text-slate-600">{issue.readTime}</span>
                     <button
                       onClick={() => onNavigate('blogs')}
                       className="text-[#0284C7] font-bold hover:underline flex items-center gap-1 cursor-pointer"
@@ -299,7 +299,7 @@ export const NewsletterPage: React.FC<NewsletterPageProps> = ({ onNavigate, onOp
         <div className="bg-slate-50 border border-slate-200 rounded-3xl p-8 flex flex-col sm:flex-row items-center justify-between gap-6">
           <div className="space-y-1">
             <h4 className="text-lg font-bold text-slate-900 font-heading">Looking for Personalized Dental Consultation?</h4>
-            <p className="text-xs sm:text-sm text-slate-600 font-body">
+            <p className="text-xs sm:text-sm text-slate-800 font-body">
               Visit Dr. Aslam Inamdar at our Kurla West or South Mumbai clinics for digital diagnosis and treatment planning.
             </p>
           </div>

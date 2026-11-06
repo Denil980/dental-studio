@@ -47,7 +47,7 @@ export const Header: React.FC<HeaderProps> = ({
             className={`px-4 py-2 rounded-full text-[14px] transition-all duration-200 cursor-pointer ${
               currentPage === 'home' 
                 ? 'bg-slate-900 text-white shadow-xs font-medium' 
-                : 'text-slate-600 hover:text-slate-950 hover:bg-slate-100/70 font-normal'
+                : 'text-slate-800 hover:text-slate-950 hover:bg-slate-100/70 font-medium'
             }`}
           >
             Home
@@ -59,7 +59,7 @@ export const Header: React.FC<HeaderProps> = ({
             className={`px-4 py-2 rounded-full text-[14px] transition-all duration-200 cursor-pointer ${
               currentPage === 'about' 
                 ? 'bg-slate-900 text-white shadow-xs font-medium' 
-                : 'text-slate-600 hover:text-slate-950 hover:bg-slate-100/70 font-normal'
+                : 'text-slate-800 hover:text-slate-950 hover:bg-slate-100/70 font-medium'
             }`}
           >
             About
@@ -71,7 +71,7 @@ export const Header: React.FC<HeaderProps> = ({
             className={`px-4 py-2 rounded-full text-[14px] transition-all duration-200 cursor-pointer ${
               currentPage === 'treatments' || currentPage === 'treatment-detail' 
                 ? 'bg-slate-900 text-white shadow-xs font-medium' 
-                : 'text-slate-600 hover:text-slate-950 hover:bg-slate-100/70 font-normal'
+                : 'text-slate-800 hover:text-slate-950 hover:bg-slate-100/70 font-medium'
             }`}
           >
             Treatments
@@ -83,7 +83,7 @@ export const Header: React.FC<HeaderProps> = ({
             className={`px-4 py-2 rounded-full text-[14px] transition-all duration-200 cursor-pointer ${
               currentPage === 'super-speciality' 
                 ? 'bg-slate-900 text-white shadow-xs font-medium' 
-                : 'text-slate-600 hover:text-slate-950 hover:bg-slate-100/70 font-normal'
+                : 'text-slate-800 hover:text-slate-950 hover:bg-slate-100/70 font-medium'
             }`}
           >
             Super Speciality
@@ -95,7 +95,7 @@ export const Header: React.FC<HeaderProps> = ({
             className={`px-4 py-2 rounded-full text-[14px] transition-all duration-200 cursor-pointer ${
               currentPage === 'gallery' 
                 ? 'bg-slate-900 text-white shadow-xs font-medium' 
-                : 'text-slate-600 hover:text-slate-950 hover:bg-slate-100/70 font-normal'
+                : 'text-slate-800 hover:text-slate-950 hover:bg-slate-100/70 font-medium'
             }`}
           >
             Gallery
@@ -107,7 +107,7 @@ export const Header: React.FC<HeaderProps> = ({
             className={`px-4 py-2 rounded-full text-[14px] transition-all duration-200 cursor-pointer ${
               currentPage === 'testimonials' 
                 ? 'bg-slate-900 text-white shadow-xs font-medium' 
-                : 'text-slate-600 hover:text-slate-950 hover:bg-slate-100/70 font-normal'
+                : 'text-slate-800 hover:text-slate-950 hover:bg-slate-100/70 font-medium'
             }`}
           >
             Patient Stories
@@ -119,7 +119,7 @@ export const Header: React.FC<HeaderProps> = ({
             className={`px-4 py-2 rounded-full text-[14px] transition-all duration-200 cursor-pointer ${
               currentPage === 'contact' 
                 ? 'bg-slate-900 text-white shadow-xs font-medium' 
-                : 'text-slate-600 hover:text-slate-950 hover:bg-slate-100/70 font-normal'
+                : 'text-slate-800 hover:text-slate-950 hover:bg-slate-100/70 font-medium'
             }`}
           >
             Contact

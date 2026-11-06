@@ -62,7 +62,7 @@ export const GalleryPage: React.FC<GalleryPageProps> = ({
               />
             </div>
 
-            <p className="text-lg text-slate-600 max-w-2xl leading-relaxed">
+            <p className="text-lg text-slate-800 max-w-2xl leading-relaxed">
               Explore real patient smile transformations, our advanced clinic operatories in Mumbai, and our proprietary DentMatrix 3D Digital Laboratory where natural smiles are engineered.
             </p>
           </div>
@@ -115,13 +115,13 @@ export const GalleryPage: React.FC<GalleryPageProps> = ({
                     <h3 className="text-lg font-bold text-slate-900 leading-snug">
                       {item.title}
                     </h3>
-                    <p className="text-xs text-slate-600 leading-relaxed line-clamp-2">
+                    <p className="text-xs text-slate-700 leading-relaxed line-clamp-2">
                       {item.description}
                     </p>
                   </div>
                 </div>
 
-                <div className="pt-3 border-t border-slate-100 flex items-center justify-between text-xs font-semibold text-slate-500">
+                <div className="pt-3 border-t border-slate-100 flex items-center justify-between text-xs font-semibold text-slate-700">
                   <span className="inline-flex items-center gap-1.5 text-[#0284C7] font-bold">
                     <MedicalCertificationSeal className="w-3.5 h-3.5" />
                     DentMatrix Precision
@@ -142,7 +142,7 @@ export const GalleryPage: React.FC<GalleryPageProps> = ({
         <div className="mt-14 bg-gradient-to-r from-sky-50 via-white to-sky-50 rounded-3xl p-8 sm:p-12 text-center space-y-4 border border-sky-100 shadow-sm premium-card">
           <SmileDesignIcon className="w-8 h-8 text-[#0284C7] mx-auto" />
           <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900">Want to Envision Your Next Smile?</h3>
-          <p className="text-sm text-slate-600 max-w-xl mx-auto">
+          <p className="text-sm text-slate-800 max-w-xl mx-auto">
             Book a 3D facially driven smile assessment with Dr. Aslam Inamdar and preview your custom cosmetic restoration before starting.
           </p>
           <div className="pt-2">

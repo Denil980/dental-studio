@@ -240,7 +240,7 @@ export const BlogsPage: React.FC<BlogsPageProps> = ({ onNavigate, onOpenBookingM
               text="Dental Studio Clinical Blogs"
               className="text-4xl sm:text-5xl font-extrabold text-slate-900 tracking-tight font-heading"
             />
-            <p className="text-base sm:text-lg text-slate-600 leading-relaxed font-body">
+            <p className="text-base sm:text-lg text-slate-800 leading-relaxed font-body">
               Expert articles, surgical insights, and patient guides written by Dr. Aslam Inamdar and the DentMatrix digital lab team.
             </p>
           </div>
@@ -283,7 +283,7 @@ export const BlogsPage: React.FC<BlogsPageProps> = ({ onNavigate, onOpenBookingM
                       {featuredPost.title}
                     </h3>
 
-                    <p className="text-slate-600 text-sm leading-relaxed font-body">
+                    <p className="text-slate-800 text-sm leading-relaxed font-body">
                       {featuredPost.excerpt}
                     </p>
                   </div>
@@ -382,7 +382,7 @@ export const BlogsPage: React.FC<BlogsPageProps> = ({ onNavigate, onOpenBookingM
                       {post.title}
                     </h4>
 
-                    <p className="text-xs text-slate-600 leading-relaxed font-body line-clamp-3">
+                    <p className="text-xs text-slate-800 leading-relaxed font-body line-clamp-3">
                       {post.excerpt}
                     </p>
                   </div>
@@ -489,7 +489,7 @@ export const BlogsPage: React.FC<BlogsPageProps> = ({ onNavigate, onOpenBookingM
               </p>
 
               {/* Content Sections */}
-              <div className="space-y-6 text-sm sm:text-base text-slate-600 leading-relaxed font-body">
+              <div className="space-y-6 text-sm sm:text-base text-slate-800 leading-relaxed font-body">
                 {activeArticle.content.sections.map((sec, i) => (
                   <div key={i} className="space-y-2">
                     <h3 className="text-lg sm:text-xl font-bold text-slate-900 font-heading">
@@ -503,14 +503,14 @@ export const BlogsPage: React.FC<BlogsPageProps> = ({ onNavigate, onOpenBookingM
               {/* Clinical Takeaway Callout */}
               <div className="bg-sky-50 border border-sky-100 rounded-2xl p-5 sm:p-6 space-y-2">
                 <h4 className="text-xs font-bold text-[#0284C7] uppercase tracking-wider">Clinical Takeaway</h4>
-                <p className="text-xs sm:text-sm text-slate-800 font-medium leading-relaxed">
+                <p className="text-xs sm:text-sm text-slate-900 font-medium leading-relaxed">
                   {activeArticle.content.clinicalTakeaway}
                 </p>
               </div>
 
               {/* CTA Inside Modal */}
               <div className="pt-4 flex flex-col sm:flex-row items-center justify-between gap-4 border-t border-slate-100">
-                <p className="text-xs text-slate-500">
+                <p className="text-xs text-slate-700">
                   Need clinical advice on this treatment? Book a consultation with Dr. Aslam Inamdar.
                 </p>
                 <button

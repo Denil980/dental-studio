@@ -41,7 +41,7 @@ export const TestimonialsPage: React.FC<TestimonialsPageProps> = ({ onNavigate, 
                 className="text-4xl sm:text-5xl font-extrabold text-slate-900 tracking-tight"
               />
             </div>
-            <p className="text-lg text-slate-600 leading-relaxed">
+            <p className="text-lg text-slate-800 leading-relaxed">
               Discover real transformation journeys recorded by our patients. From complex smile makeovers and full mouth rehabilitation to painless dental implants, hear how Dr. Aslam Inamdar and Dental Studio revitalize smiles and confidence.
             </p>
           </div>
@@ -60,7 +60,7 @@ export const TestimonialsPage: React.FC<TestimonialsPageProps> = ({ onNavigate, 
               Featured Video Testimonials
             </h2>
           </div>
-          <p className="text-xs text-slate-500">Click any video card to watch their complete smile story</p>
+          <p className="text-xs text-slate-700">Click any video card to watch their complete smile story</p>
         </div>
 
         {/* 1. Featured Big Video Card */}
@@ -117,7 +117,7 @@ export const TestimonialsPage: React.FC<TestimonialsPageProps> = ({ onNavigate, 
                     <div>
                       <h4 className="text-base font-bold text-slate-900">{featuredVideo.patientName}</h4>
                       <p className="text-xs font-bold text-[#0284C7]">{featuredVideo.treatment}</p>
-                      <p className="text-[11px] text-slate-400">{featuredVideo.clinic} • {featuredVideo.location}</p>
+                      <p className="text-[11px] text-slate-600">{featuredVideo.clinic} • {featuredVideo.location}</p>
                     </div>
                   </div>
 
@@ -173,13 +173,13 @@ export const TestimonialsPage: React.FC<TestimonialsPageProps> = ({ onNavigate, 
                       {video.patientName}
                     </h4>
 
-                    <p className="text-xs text-slate-600 line-clamp-2 leading-relaxed italic">
+                    <p className="text-xs text-slate-800 line-clamp-2 leading-relaxed italic">
                       "{video.quote}"
                     </p>
                   </div>
                 </div>
 
-                <div className="px-5 pb-5 pt-2 border-t border-slate-50 flex items-center justify-between text-[11px] text-slate-400">
+                <div className="px-5 pb-5 pt-2 border-t border-slate-50 flex items-center justify-between text-[11px] text-slate-600">
                   <span>{video.location}</span>
                   <span className="font-bold text-[#0284C7] inline-flex items-center gap-1 group-hover:translate-x-1 transition-transform">
                     <span>Watch</span>
@@ -233,7 +233,7 @@ export const TestimonialsPage: React.FC<TestimonialsPageProps> = ({ onNavigate, 
               Written Patient Experiences
             </h2>
           </div>
-          <p className="text-xs text-slate-500">Feedback from Google & Practo verified consultations</p>
+          <p className="text-xs text-slate-700">Feedback from Google & Practo verified consultations</p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -256,7 +256,7 @@ export const TestimonialsPage: React.FC<TestimonialsPageProps> = ({ onNavigate, 
                     </span>
                   </div>
 
-                  <p className="text-sm sm:text-base text-slate-700 leading-relaxed italic font-body">
+                  <p className="text-sm sm:text-base text-slate-800 leading-relaxed italic font-body">
                     "{item.quote}"
                   </p>
                 </div>
@@ -271,14 +271,14 @@ export const TestimonialsPage: React.FC<TestimonialsPageProps> = ({ onNavigate, 
                     />
                     <div>
                       <h4 className="text-sm font-bold text-slate-900">{item.patientName}</h4>
-                      <p className="text-[11px] text-slate-500 flex items-center gap-1">
+                      <p className="text-[11px] text-slate-700 flex items-center gap-1">
                         <MapPin className="w-3 h-3 text-[#0284C7]" />
                         <span>{item.clinic}</span>
                       </p>
                     </div>
                   </div>
 
-                  <span className="text-[11px] text-slate-400 font-medium">
+                  <span className="text-[11px] text-slate-600 font-medium">
                     {item.date}
                   </span>
                 </div>

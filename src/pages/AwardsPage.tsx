@@ -165,7 +165,7 @@ export const AwardsPage: React.FC<AwardsPageProps> = ({ onNavigate, onOpenBookin
               text="Awards & Accolades"
               className="text-4xl sm:text-5xl font-extrabold text-slate-900 tracking-tight font-heading"
             />
-            <p className="text-base sm:text-lg text-slate-600 leading-relaxed font-body">
+            <p className="text-base sm:text-lg text-slate-800 leading-relaxed font-body">
               Recognized at the prestigious Famdent Excellence in Dentistry Awards (FEDA) and National Dental Summits for aesthetic mastery, innovative digital workflows, and patient care.
             </p>
           </div>
@@ -227,7 +227,7 @@ export const AwardsPage: React.FC<AwardsPageProps> = ({ onNavigate, onOpenBookin
                   <h4 className="text-base sm:text-lg font-bold text-slate-900 font-heading group-hover:text-[#0284C7] transition-colors leading-snug">
                     {award.title}
                   </h4>
-                  <p className="text-xs sm:text-sm text-slate-500 font-body">
+                  <p className="text-xs sm:text-sm text-slate-700 font-body">
                     {award.event}
                   </p>
                 </div>

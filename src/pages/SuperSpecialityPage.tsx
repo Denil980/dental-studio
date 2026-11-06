@@ -69,7 +69,7 @@ export const SuperSpecialityPage: React.FC<SuperSpecialityPageProps> = ({
                 />
               </div>
 
-              <p className="text-lg text-slate-600 max-w-2xl leading-relaxed">
+              <p className="text-lg text-slate-800 max-w-2xl leading-relaxed">
                 Beyond routine dentistry: our super-specialized infrastructure unites same-day robotics, 3D facially driven algorithms, an in-house digital laboratory, and international dental tourism.
               </p>
             </div>
@@ -80,7 +80,7 @@ export const SuperSpecialityPage: React.FC<SuperSpecialityPageProps> = ({
                   <DentMatrixLabIcon className="w-7 h-7" />
                 </div>
                 <h4 className="text-base font-extrabold text-slate-900">DentMatrix Engineered</h4>
-                <p className="text-xs text-slate-500">Every super-specialty case is designed in 3D and verified for life-long biological function.</p>
+                <p className="text-xs text-slate-700">Every super-specialty case is designed in 3D and verified for life-long biological function.</p>
               </div>
             </div>
           </div>
@@ -189,7 +189,7 @@ export const SuperSpecialityPage: React.FC<SuperSpecialityPageProps> = ({
                   <p className="text-sm font-semibold">{current.title}</p>
                 </div>
               </div>
-              <p className="text-[11px] text-slate-400 text-center italic">
+              <p className="text-[11px] text-slate-600 text-center italic">
                 Advanced surgical and laboratory protocols directed by Dr. Aslam Inamdar
               </p>
             </div>

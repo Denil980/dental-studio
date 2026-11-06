@@ -33,10 +33,10 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate, onOpenBookingM
                 text="About Dr. Inamdar's Dental Studio"
                 className="text-4xl sm:text-5xl font-extrabold text-slate-900 tracking-tight"
               />
-              <p className="text-lg text-slate-600 max-w-xl leading-relaxed">
+              <p className="text-lg text-slate-800 max-w-xl leading-relaxed">
                 A center of excellence in modern, aesthetic and restorative dentistry since 2003.
               </p>
-              <p className="text-sm text-slate-500 leading-relaxed max-w-xl">
+              <p className="text-sm text-slate-700 leading-relaxed max-w-xl">
                 Founded with a mission to eliminate dental anxiety and provide cutting-edge care, Dental Studio combines soothing contemporary ambiance with our proprietary in-house <strong>DentMatrix 3-D Digital Lab</strong>.
               </p>
             </div>
@@ -88,11 +88,11 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate, onOpenBookingM
                 </p>
               </div>
 
-              <p className="text-slate-600 text-sm sm:text-base leading-relaxed">
+              <p className="text-slate-800 text-sm sm:text-base leading-relaxed">
                 With over two decades of clinical experience, Dr. Aslam Inamdar is known for his expertise in cosmetic dentistry, dental implants and full mouth rehabilitation.
               </p>
 
-              <p className="text-slate-500 text-sm leading-relaxed">
+              <p className="text-slate-700 text-sm leading-relaxed">
                 He has undergone advanced surgical training across international dental academies and actively incorporates guided digital workflows, 3D cone-beam computed tomography (CBCT), and painless dental protocols to achieve natural-looking, lifelong smiles.
               </p>
 
@@ -130,7 +130,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate, onOpenBookingM
           
           <div className="text-center max-w-2xl mx-auto space-y-2">
             <h2 className="text-3xl font-extrabold text-slate-900 tracking-tight">Our Clinic & DentMatrix Setup</h2>
-            <p className="text-sm sm:text-base text-slate-600 leading-relaxed">
+            <p className="text-sm sm:text-base text-slate-800 leading-relaxed">
               Dental Studio is a state-of-the-art dental center committed to delivering world-class dental care with a personalized, patient-first approach.
             </p>
           </div>
@@ -159,7 +159,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate, onOpenBookingM
                       <Icon className="w-6 h-6" />
                     </div>
                     <h4 className="text-sm font-bold text-slate-900 mb-1">{pillar.title}</h4>
-                    <p className="text-xs text-slate-500 leading-relaxed">{pillar.desc}</p>
+                    <p className="text-xs text-slate-700 leading-relaxed">{pillar.desc}</p>
                   </div>
                 </ScrollReveal>
               );
@@ -175,7 +175,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate, onOpenBookingM
           <h2 className="text-3xl font-extrabold text-slate-900 tracking-tight">
             Our Experience & Achievements
           </h2>
-          <p className="text-sm text-slate-500 max-w-xl mx-auto">
+          <p className="text-sm text-slate-700 max-w-xl mx-auto">
             Recognized for clinical precision and patient trust since 2003
           </p>
         </div>

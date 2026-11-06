@@ -125,7 +125,7 @@ export const CareerPage: React.FC<CareerPageProps> = ({ onNavigate }) => {
               text="Careers & Professional Growth"
               className="text-4xl sm:text-5xl font-extrabold text-slate-900 tracking-tight font-heading"
             />
-            <p className="text-base sm:text-lg text-slate-600 leading-relaxed font-body">
+            <p className="text-base sm:text-lg text-slate-800 leading-relaxed font-body">
               Be part of Mumbai's premier 3D implant and digital smile practice. Work alongside Dr. Aslam Inamdar and learn master clinical protocols.
             </p>
           </div>
@@ -143,7 +143,7 @@ export const CareerPage: React.FC<CareerPageProps> = ({ onNavigate }) => {
               <GraduationCap className="w-5 h-5" />
             </div>
             <h4 className="text-base font-bold text-slate-900 font-heading">Advanced Digital Mentorship</h4>
-            <p className="text-xs text-slate-600 leading-relaxed font-body">
+            <p className="text-xs text-slate-800 leading-relaxed font-body">
               Direct exposure to 3D guided surgery, exocad design, and full arch restorations with Dr. Inamdar.
             </p>
           </div>
@@ -153,7 +153,7 @@ export const CareerPage: React.FC<CareerPageProps> = ({ onNavigate }) => {
               <Building className="w-5 h-5" />
             </div>
             <h4 className="text-base font-bold text-slate-900 font-heading">In-House DentMatrix Lab</h4>
-            <p className="text-xs text-slate-600 leading-relaxed font-body">
+            <p className="text-xs text-slate-800 leading-relaxed font-body">
               State-of-the-art 5-axis milling units, intraoral 3D scanners, and immediate-load chairside workflows.
             </p>
           </div>
@@ -163,7 +163,7 @@ export const CareerPage: React.FC<CareerPageProps> = ({ onNavigate }) => {
               <Heart className="w-5 h-5" />
             </div>
             <h4 className="text-base font-bold text-slate-900 font-heading">Patient-First Culture</h4>
-            <p className="text-xs text-slate-600 leading-relaxed font-body">
+            <p className="text-xs text-slate-800 leading-relaxed font-body">
               A collaborative, ethical environment focused on zero-compromise clinical excellence and warmth.
             </p>
           </div>
@@ -174,7 +174,7 @@ export const CareerPage: React.FC<CareerPageProps> = ({ onNavigate }) => {
           <div className="flex items-center justify-between pb-3 border-b border-slate-200">
             <div>
               <h3 className="text-2xl font-bold text-slate-900 font-heading">Current Opportunities</h3>
-              <p className="text-xs text-slate-500 font-body">Explore open positions across our clinical, lab, and front-desk teams.</p>
+              <p className="text-xs text-slate-700 font-body">Explore open positions across our clinical, lab, and front-desk teams.</p>
             </div>
             <span className="text-xs font-bold text-[#0284C7] bg-sky-50 px-3 py-1 rounded-full">
               4 Roles Open
@@ -202,14 +202,14 @@ export const CareerPage: React.FC<CareerPageProps> = ({ onNavigate }) => {
                       <span>{pos.location}</span>
                     </div>
 
-                    <div className="pt-2 text-xs text-slate-600 space-y-1.5 font-body">
-                      <p><span className="font-semibold text-slate-800">Requirements:</span> {pos.experience}</p>
-                      <p><span className="font-semibold text-slate-800">Scope:</span> {pos.responsibilities}</p>
+                    <div className="pt-2 text-xs text-slate-800 space-y-1.5 font-body">
+                      <p><span className="font-semibold text-slate-900">Requirements:</span> {pos.experience}</p>
+                      <p><span className="font-semibold text-slate-900">Scope:</span> {pos.responsibilities}</p>
                     </div>
                   </div>
 
                   <div className="pt-6 mt-4 border-t border-slate-100 flex items-center justify-between">
-                    <span className="text-[11px] text-slate-400">Competitive salary & growth</span>
+                    <span className="text-[11px] text-slate-600">Competitive salary & growth</span>
                     <a
                       href="#apply"
                       onClick={() => setFormData({ ...formData, role: pos.title })}
@@ -232,7 +232,7 @@ export const CareerPage: React.FC<CareerPageProps> = ({ onNavigate }) => {
               <h3 className="text-2xl sm:text-3xl font-bold font-heading text-slate-900">
                 Submit Your Application
               </h3>
-              <p className="text-xs sm:text-sm text-slate-600 font-body">
+              <p className="text-xs sm:text-sm text-slate-800 font-body">
                 We review applications on a rolling basis. You may also email your CV directly to <a href="mailto:careers@dentalstudio.co" className="font-semibold text-[#0284C7] hover:underline">careers@dentalstudio.co</a>.
               </p>
             </div>
@@ -241,7 +241,7 @@ export const CareerPage: React.FC<CareerPageProps> = ({ onNavigate }) => {
               <div className="bg-emerald-50/70 border border-emerald-100 rounded-2xl p-8 text-center space-y-3">
                 <CheckCircle2 className="w-12 h-12 text-emerald-600 mx-auto" />
                 <h4 className="text-xl font-bold text-slate-900 font-heading">Application Received!</h4>
-                <p className="text-xs sm:text-sm text-slate-600 leading-relaxed max-w-md mx-auto font-body">
+                <p className="text-xs sm:text-sm text-slate-800 leading-relaxed max-w-md mx-auto font-body">
                   Thank you, <span className="font-semibold text-slate-900">{formData.fullName}</span>. We have received your application{resumeFile ? ` and resume (${resumeFile.name})` : ''} for the <span className="font-semibold text-[#0284C7]">{formData.role}</span> position. Our clinical hiring coordinator will get in touch shortly.
                 </p>
                 <div className="pt-2">

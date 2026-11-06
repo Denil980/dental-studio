@@ -82,7 +82,7 @@ export const TreatmentsPage: React.FC<TreatmentsPageProps> = ({
                   className="text-4xl sm:text-5xl font-extrabold text-slate-900 tracking-tight"
                 />
               </div>
-              <p className="text-lg text-slate-600 max-w-2xl leading-relaxed">
+              <p className="text-lg text-slate-800 max-w-2xl leading-relaxed">
                 Comprehensive, evidence-based dental care across 6 core disciplines. Explore every treatment in detail to understand procedure steps, biological benefits, and outcomes.
               </p>
             </div>
@@ -94,7 +94,7 @@ export const TreatmentsPage: React.FC<TreatmentsPageProps> = ({
                   <DentMatrixLabIcon className="w-6 h-6" />
                 </div>
                 <h3 className="text-sm font-extrabold text-slate-900">DentMatrix Synergy</h3>
-                <p className="text-xs text-slate-500">Every treatment is digitally planned in 3D for pain-free precision.</p>
+                <p className="text-xs text-slate-700">Every treatment is digitally planned in 3D for pain-free precision.</p>
               </div>
             </div>
           </div>
@@ -138,7 +138,7 @@ export const TreatmentsPage: React.FC<TreatmentsPageProps> = ({
                     <h2 className="text-2xl font-extrabold text-slate-900 tracking-tight">
                       {category.name}
                     </h2>
-                    <p className="text-xs text-slate-500">{category.shortDesc}</p>
+                    <p className="text-xs text-slate-700">{category.shortDesc}</p>
                   </div>
                 </div>
               </div>
@@ -167,7 +167,7 @@ export const TreatmentsPage: React.FC<TreatmentsPageProps> = ({
                           <h3 className="text-xl font-bold text-slate-900 group-hover:text-[#0284C7] transition-colors leading-snug">
                             {sub.name}
                           </h3>
-                          <p className="text-xs text-slate-600 leading-relaxed line-clamp-3">
+                          <p className="text-xs text-slate-800 leading-relaxed line-clamp-3">
                             {sub.shortDesc}
                           </p>
                         </div>

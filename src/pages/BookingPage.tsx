@@ -78,7 +78,7 @@ export const BookingPage: React.FC<BookingPageProps> = ({ onNavigate }) => {
                 className="text-4xl sm:text-5xl font-extrabold text-slate-900 tracking-tight font-heading"
               />
             </div>
-            <p className="text-lg text-slate-600 leading-relaxed font-body">
+            <p className="text-lg text-slate-800 leading-relaxed font-body">
               Schedule a consultation with Dr. Aslam Inamdar and our expert dental team.
             </p>
           </div>
@@ -110,8 +110,8 @@ export const BookingPage: React.FC<BookingPageProps> = ({ onNavigate }) => {
               </div>
 
               {/* Quick Contact Assist */}
-              <div className="bg-sky-50 rounded-2xl p-4 border border-sky-100 text-xs text-slate-600 space-y-1">
-                <p className="font-bold text-slate-800">Need immediate assistance?</p>
+              <div className="bg-sky-50 rounded-2xl p-4 border border-sky-100 text-xs text-slate-800 space-y-1">
+                <p className="font-bold text-slate-900">Need immediate assistance?</p>
                 <p>Call our reception helpline directly at <a href="tel:+919876543210" className="text-[#0284C7] font-semibold hover:underline">+91 98765 43210</a></p>
               </div>
             </div>
@@ -124,7 +124,7 @@ export const BookingPage: React.FC<BookingPageProps> = ({ onNavigate }) => {
                     <CheckCircle2 className="w-10 h-10" />
                   </div>
                   <h3 className="text-2xl font-bold text-slate-900 font-heading">Your Appointment is Booked!</h3>
-                  <p className="text-slate-600 text-sm max-w-md mx-auto leading-relaxed font-body">
+                  <p className="text-slate-800 text-sm max-w-md mx-auto leading-relaxed font-body">
                     Thank you, <span className="font-semibold text-slate-900">{formData.fullName}</span>! We have reserved your preferred slot on <span className="font-semibold text-slate-900">{formData.date} at {formData.time}</span> for <span className="font-semibold text-[#0284C7]">{formData.treatment}</span> at our <span className="text-[#0284C7] font-semibold">{formData.clinic}</span>.
                   </p>
                   <div className="pt-4">

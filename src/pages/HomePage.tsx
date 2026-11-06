@@ -132,7 +132,7 @@ export const HomePage: React.FC<HomePageProps> = ({
                 />
               </div>
 
-              <p className="text-base sm:text-lg text-slate-600 max-w-xl leading-relaxed">
+              <p className="text-base sm:text-lg text-slate-800 max-w-xl leading-relaxed">
                 Modern, comprehensive and personalized dental care powered by our in-house <strong>DentMatrix 3D Digital Lab</strong>. From same-day implants to facially driven smile makeovers.
               </p>
 
@@ -203,7 +203,7 @@ export const HomePage: React.FC<HomePageProps> = ({
                     <span className="text-xs sm:text-sm font-bold text-slate-900 mt-1 font-heading">
                       {stat.label}
                     </span>
-                    <span className="text-[11px] text-slate-500 mt-0.5">{stat.subtitle}</span>
+                    <span className="text-[11px] text-slate-700 font-medium mt-0.5">{stat.subtitle}</span>
                   </div>
                 </ScrollReveal>
               );
@@ -243,7 +243,7 @@ export const HomePage: React.FC<HomePageProps> = ({
                 {DOCTOR_INFO.title}
               </p>
 
-              <p className="text-slate-600 text-sm sm:text-base leading-relaxed">
+              <p className="text-slate-800 text-sm sm:text-base leading-relaxed">
                 {DOCTOR_INFO.bio}
               </p>
 
@@ -275,7 +275,7 @@ export const HomePage: React.FC<HomePageProps> = ({
           <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
             Our Key Treatments
           </h2>
-          <p className="text-sm text-slate-600">
+          <p className="text-sm text-slate-800">
             Click any treatment category below to explore all procedures, diagnostic protocols, and patient transformations.
           </p>
         </div>
@@ -305,7 +305,7 @@ export const HomePage: React.FC<HomePageProps> = ({
                     <h3 className="text-xl font-bold text-slate-900 group-hover:text-[#0284C7] transition-colors mb-2 font-heading">
                       {cat.name}
                     </h3>
-                    <p className="text-xs text-slate-600 leading-relaxed line-clamp-2 mb-4 font-body">
+                    <p className="text-xs text-slate-800 leading-relaxed line-clamp-2 mb-4 font-body">
                       {cat.shortDesc}
                     </p>
 
@@ -340,7 +340,7 @@ export const HomePage: React.FC<HomePageProps> = ({
               <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight font-heading">
                 Dental Studio Super Speciality
               </h2>
-              <p className="text-sm text-slate-600 max-w-xl mt-1 font-body">
+              <p className="text-sm text-slate-800 max-w-xl mt-1 font-body">
                 Equipped with chairside robotics, DentMatrix 3D planning, and dedicated international dental concierge.
               </p>
             </div>
@@ -368,7 +368,7 @@ export const HomePage: React.FC<HomePageProps> = ({
                     <h4 className="text-base font-bold text-slate-900 group-hover:text-[#0284C7] transition-colors mb-2 font-heading">
                       {item.title}
                     </h4>
-                    <p className="text-xs text-slate-600 line-clamp-3 leading-relaxed font-body">
+                    <p className="text-xs text-slate-800 line-clamp-3 leading-relaxed font-body">
                       {item.overview}
                     </p>
                   </div>
@@ -391,7 +391,7 @@ export const HomePage: React.FC<HomePageProps> = ({
             <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
               Hear from Our Happy Patients
             </h2>
-            <p className="text-sm text-slate-600 max-w-xl">
+            <p className="text-sm text-slate-800 max-w-xl">
               Discover how Dr. Aslam Inamdar and Dental Studio are transforming lives with healthy, natural and confident smiles.
             </p>
           </div>
@@ -450,7 +450,7 @@ export const HomePage: React.FC<HomePageProps> = ({
                 />
                 <div>
                   <h4 className="text-base font-bold text-slate-900">{featured.patientName}</h4>
-                  <p className="text-xs text-slate-500 font-medium">{featured.treatment}</p>
+                  <p className="text-xs text-slate-700 font-medium">{featured.treatment}</p>
                 </div>
               </div>
             </div>
@@ -491,7 +491,7 @@ export const HomePage: React.FC<HomePageProps> = ({
             <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
               Smile Gallery
             </h2>
-            <p className="text-sm text-slate-600 max-w-xl">
+            <p className="text-sm text-slate-800 max-w-xl">
               Real treatments. Real transformations. Explore how Dr. Aslam Inamdar and DentMatrix revitalize smiles with precision digital care.
             </p>
           </div>
@@ -526,7 +526,7 @@ export const HomePage: React.FC<HomePageProps> = ({
                     <h3 className="text-base font-bold text-slate-900 group-hover:text-[#0284C7] transition-colors line-clamp-1">
                       {item.title}
                     </h3>
-                    <p className="text-xs text-slate-500 leading-relaxed line-clamp-2">
+                    <p className="text-xs text-slate-700 leading-relaxed line-clamp-2">
                       {item.description}
                     </p>
                   </div>
@@ -550,7 +550,7 @@ export const HomePage: React.FC<HomePageProps> = ({
             <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
               Schedule Your Consultation
             </h2>
-            <p className="text-sm text-slate-600">
+            <p className="text-sm text-slate-800">
               Select your preferred clinic location in Mumbai and book your appointment with Dr. Aslam Inamdar and our clinical team.
             </p>
           </div>
@@ -569,12 +569,12 @@ export const HomePage: React.FC<HomePageProps> = ({
                     >
                       <div className="flex items-center justify-between">
                         <h4 className="text-base font-bold text-slate-900">{clinic.name}</h4>
-                        <span className="text-[11px] font-medium text-slate-500">
+                        <span className="text-[11px] font-medium text-slate-700">
                           Mon – Sat
                         </span>
                       </div>
 
-                      <p className="text-xs text-slate-600 leading-relaxed flex items-start gap-2">
+                      <p className="text-xs text-slate-800 leading-relaxed flex items-start gap-2">
                         <MapPin className="w-3.5 h-3.5 text-[#0284C7] shrink-0 mt-0.5" />
                         <span>{clinic.address}</span>
                       </p>
@@ -625,7 +625,7 @@ export const HomePage: React.FC<HomePageProps> = ({
             {/* Right: Inline Booking Form */}
             <div id="home-booking-form" className="lg:col-span-7 bg-white rounded-3xl p-6 sm:p-8 border border-slate-200 shadow-md">
               <h3 className="text-xl font-bold text-slate-900 mb-1">Book an Appointment Online</h3>
-              <p className="text-xs text-slate-500 mb-6">Fill out the form below and we will confirm your preferred time slot promptly.</p>
+              <p className="text-xs text-slate-700 mb-6">Fill out the form below and we will confirm your preferred time slot promptly.</p>
 
               {bookingSuccess ? (
                 <div className="py-8 text-center space-y-4">
@@ -633,7 +633,7 @@ export const HomePage: React.FC<HomePageProps> = ({
                     <CheckCircle2 className="w-10 h-10" />
                   </div>
                   <h4 className="text-2xl font-bold text-slate-900">Appointment Requested!</h4>
-                  <p className="text-slate-600 text-sm max-w-md mx-auto">
+                  <p className="text-slate-800 text-sm max-w-md mx-auto">
                     Thank you, <span className="font-semibold text-slate-900">{bookingData.fullName}</span>! We have received your consultation request for <span className="text-[#0284C7] font-bold">{bookingData.treatment}</span> at our <span className="font-semibold text-slate-900">{bookingData.clinic}</span>.
                   </p>
                   <button

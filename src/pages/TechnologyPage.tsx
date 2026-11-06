@@ -83,7 +83,7 @@ export const TechnologyPage: React.FC<TechnologyPageProps> = ({ onNavigate, onOp
               text="Advanced Dental Technology"
               className="text-4xl sm:text-5xl font-extrabold text-slate-900 tracking-tight font-heading"
             />
-            <p className="text-base sm:text-lg text-slate-600 leading-relaxed font-body">
+            <p className="text-base sm:text-lg text-slate-800 leading-relaxed font-body">
               Engineering world-class clinical outcomes with our in-house DentMatrix 3D Digital Lab, 3D CBCT scanners, and computer-guided protocols.
             </p>
           </div>
@@ -112,14 +112,14 @@ export const TechnologyPage: React.FC<TechnologyPageProps> = ({ onNavigate, onOp
                     <h4 className="text-xl font-bold text-slate-900 font-heading group-hover:text-[#0284C7] transition-colors">
                       {tech.title}
                     </h4>
-                    <p className="text-xs sm:text-sm text-slate-600 leading-relaxed font-body pt-1">
+                    <p className="text-xs sm:text-sm text-slate-800 leading-relaxed font-body pt-1">
                       {tech.desc}
                     </p>
                   </div>
                 </div>
 
                 <div className="px-6 pb-6 pt-3 border-t border-slate-100 flex items-center justify-between text-xs">
-                  <span className="text-slate-400">Available at both clinics</span>
+                  <span className="text-slate-600">Available at both clinics</span>
                   <button
                     onClick={onOpenBookingModal}
                     className="text-[#0284C7] font-bold hover:underline flex items-center gap-1 cursor-pointer"
@@ -138,7 +138,7 @@ export const TechnologyPage: React.FC<TechnologyPageProps> = ({ onNavigate, onOp
         <div className="bg-sky-50/70 border border-sky-100 rounded-3xl p-8 text-center space-y-3">
           <Sparkles className="w-6 h-6 text-[#0284C7] mx-auto" />
           <h3 className="text-xl font-bold text-slate-900 font-heading">Technology Specifications Update</h3>
-          <p className="text-xs sm:text-sm text-slate-600 max-w-xl mx-auto font-body">
+          <p className="text-xs sm:text-sm text-slate-800 max-w-xl mx-auto font-body">
             Have specific equipment or hardware details to add? We will incorporate your custom specs and equipment descriptions right here.
           </p>
         </div>

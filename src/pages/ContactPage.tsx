@@ -56,7 +56,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onNavigate, onOpenBook
                 className="text-4xl sm:text-5xl font-extrabold text-slate-900 tracking-tight"
               />
             </div>
-            <p className="text-lg text-slate-600 leading-relaxed">
+            <p className="text-lg text-slate-800 leading-relaxed">
               Get in touch with Dr. Aslam Inamdar and our clinical team at our Kurla West and South Mumbai clinics.
             </p>
           </div>
@@ -83,7 +83,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onNavigate, onOpenBook
 
                   <div className="p-5 sm:p-6 space-y-3">
                     <h3 className="text-xl sm:text-2xl font-bold text-slate-900 font-heading">{clinic.name}</h3>
-                    <div className="space-y-2 text-xs sm:text-sm text-slate-600 font-body">
+                    <div className="space-y-2 text-xs sm:text-sm text-slate-800 font-body">
                       <div className="flex items-start gap-2.5">
                         <MapPin className="w-4 h-4 text-[#0284C7] shrink-0 mt-0.5" />
                         <span>{clinic.address}</span>
@@ -135,7 +135,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onNavigate, onOpenBook
             <div className="flex items-center justify-between">
               <div>
                 <h3 className="text-xl font-bold text-slate-900">Clinic Locations Map</h3>
-                <p className="text-xs text-slate-500">Click a pin to view clinic details in Mumbai</p>
+                <p className="text-xs text-slate-700">Click a pin to view clinic details in Mumbai</p>
               </div>
               <div className="flex items-center gap-2">
                 <span className="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-ping" />
@@ -196,7 +196,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onNavigate, onOpenBook
                 <span className="font-bold block text-slate-900">
                   {selectedPin === 'kurla' ? 'Kurla Clinic (Near Phoenix Marketcity)' : 'South Mumbai Clinic (Marine Lines / Colaba)'}
                 </span>
-                <span className="text-[11px] text-slate-500 block mt-0.5">
+                <span className="text-[11px] text-slate-700 block mt-0.5">
                   {selectedPin === 'kurla' ? 'LBS Marg, Kurla West • +91 98765 43210' : 'Ocean Breeze Chambers • +91 99876 54321'}
                 </span>
               </div>
@@ -206,7 +206,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onNavigate, onOpenBook
           {/* Send us a Message Form */}
           <div className="lg:col-span-5 bg-white rounded-3xl p-6 sm:p-8 border border-slate-200 shadow-sm">
             <h3 className="text-xl font-bold text-slate-900 mb-1">Send us a Message</h3>
-            <p className="text-xs text-slate-500 mb-6">Have an inquiry or feedback? We will respond within 2 working hours.</p>
+            <p className="text-xs text-slate-700 mb-6">Have an inquiry or feedback? We will respond within 2 working hours.</p>
 
             {msgSent ? (
               <div className="py-8 text-center space-y-3">
@@ -214,7 +214,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onNavigate, onOpenBook
                   <CheckCircle2 className="w-7 h-7" />
                 </div>
                 <h4 className="text-lg font-bold text-slate-900">Message Received!</h4>
-                <p className="text-xs text-slate-600">
+                <p className="text-xs text-slate-800">
                   Thank you for reaching out, <span className="font-semibold">{msgForm.name}</span>. Our clinic desk will contact you at {msgForm.phone}.
                 </p>
                 <button

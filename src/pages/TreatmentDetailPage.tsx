@@ -81,7 +81,7 @@ export const TreatmentDetailPage: React.FC<TreatmentDetailPageProps> = ({
                 />
               </div>
 
-              <p className="text-lg text-slate-600 max-w-xl leading-relaxed">
+              <p className="text-lg text-slate-800 max-w-xl leading-relaxed">
                 {currentTreatment.shortDesc}
               </p>
 
@@ -186,7 +186,7 @@ export const TreatmentDetailPage: React.FC<TreatmentDetailPageProps> = ({
                   className="w-full h-full object-cover"
                 />
               </div>
-              <p className="text-[11px] text-slate-400 text-center italic">
+              <p className="text-[11px] text-slate-600 text-center italic">
                 Treated with DentMatrix digital laboratory precision & biocompatible materials
               </p>
             </div>
@@ -201,7 +201,7 @@ export const TreatmentDetailPage: React.FC<TreatmentDetailPageProps> = ({
               <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                 Key Benefits of {currentTreatment.name}
               </h2>
-              <p className="text-xs text-slate-500">
+              <p className="text-xs text-slate-700">
                 Why patients choose Dental Studio for this procedure
               </p>
             </div>
@@ -220,7 +220,7 @@ export const TreatmentDetailPage: React.FC<TreatmentDetailPageProps> = ({
                       <h4 className="text-xs sm:text-sm font-bold text-slate-900 mb-1">
                         {benefit.title}
                       </h4>
-                      <p className="text-[11px] text-slate-500 leading-tight">
+                      <p className="text-[11px] text-slate-700 leading-tight">
                         {benefit.desc}
                       </p>
                     </div>
@@ -238,7 +238,7 @@ export const TreatmentDetailPage: React.FC<TreatmentDetailPageProps> = ({
               <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                 Step-by-Step Procedure
               </h2>
-              <p className="text-xs text-slate-500">
+              <p className="text-xs text-slate-700">
                 What to expect during your {currentTreatment.name} appointment
               </p>
             </div>
@@ -250,7 +250,7 @@ export const TreatmentDetailPage: React.FC<TreatmentDetailPageProps> = ({
                     {step.step}
                   </div>
                   <h4 className="text-sm font-bold text-slate-900">{step.title}</h4>
-                  <p className="text-xs text-slate-600 leading-relaxed">{step.desc}</p>
+                  <p className="text-xs text-slate-800 leading-relaxed">{step.desc}</p>
                 </div>
               ))}
             </div>
@@ -269,7 +269,7 @@ export const TreatmentDetailPage: React.FC<TreatmentDetailPageProps> = ({
               {currentTreatment.faqs.map((faq, idx) => (
                 <div key={idx} className="bg-white rounded-2xl p-5 border border-sky-100 shadow-xs space-y-2">
                   <h4 className="text-sm font-bold text-slate-900">{faq.question}</h4>
-                  <p className="text-xs text-slate-600 leading-relaxed">{faq.answer}</p>
+                  <p className="text-xs text-slate-800 leading-relaxed">{faq.answer}</p>
                 </div>
               ))}
             </div>
