@@ -225,8 +225,8 @@ export function App() {
         onOpenBookingModal={() => handleOpenModal()}
       />
 
-      {/* Floating Travel "Book Appointment" Button on Right-Side Center */}
-      <aside aria-label="Quick Booking" className="fixed right-0 top-1/2 -translate-y-1/2 z-50 flex items-center">
+      {/* Floating Travel "Book Appointment" Button on Right-Side Center (Tablet & Desktop) */}
+      <aside aria-label="Quick Booking" className="hidden md:flex fixed right-0 top-1/2 -translate-y-1/2 z-50 items-center">
         <button
           onClick={() => handleOpenModal()}
           className="bg-[#0284C7] hover:bg-[#0369A1] text-white py-3.5 px-4 sm:px-5 rounded-l-full shadow-[0_8px_30px_rgba(2,132,199,0.45)] hover:shadow-[0_12px_40px_rgba(2,132,199,0.6)] flex items-center gap-2.5 font-bold text-xs sm:text-sm tracking-wide transition-all duration-300 hover:pr-6 cursor-pointer border-t border-l border-b border-sky-300/40 group active:scale-95"
@@ -235,7 +235,7 @@ export function App() {
           <div className="w-7 h-7 sm:w-8 sm:h-8 rounded-full bg-white/20 flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform">
             <CalendarCheck className="w-4 h-4 text-white" />
           </div>
-          <span className="font-heading tracking-tight whitespace-nowrap">Book Appointment</span>
+          <span className="tracking-tight whitespace-nowrap">Book Appointment</span>
         </button>
       </aside>
 

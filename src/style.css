@@ -1,10 +1,10 @@
 @import "tailwindcss";
 
 @theme {
-  --font-heading: 'Playfair Display', Georgia, serif;
-  --font-serif: 'Playfair Display', Georgia, serif;
-  --font-sans: 'Poppins', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-  --font-body: 'Poppins', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-heading: 'Bodoni Moda', Georgia, serif;
+  --font-serif: 'Bodoni Moda', Georgia, serif;
+  --font-sans: 'Manrope', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-body: 'Manrope', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
 
   /* Darkened gray palette for high contrast & maximum legibility */
   --color-slate-400: #475569;
@@ -17,12 +17,12 @@
 
 @layer base {
   :root {
-    --font-heading: 'Playfair Display', Georgia, serif;
-    --font-body: 'Poppins', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    --font-heading: 'Bodoni Moda', Georgia, serif;
+    --font-body: 'Manrope', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   }
 
   body {
-    font-family: 'Poppins', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    font-family: 'Manrope', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
     color: #0f172a;
     background-color: #f0f9ff;
     -webkit-font-smoothing: antialiased;
@@ -32,33 +32,46 @@
   /* All paragraph text sentences are dark and clearly visible */
   p {
     color: #1e293b;
+    font-family: 'Manrope', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   }
 
-  /* Headings strictly use Playfair Display */
-  h1, h2, h3, h4, h5, h6, 
-  .font-heading, 
-  [class*="font-heading"], 
-  [class*="font-serif"] {
-    font-family: 'Playfair Display', Georgia, serif !important;
-    letter-spacing: -0.012em;
+  /* H1 / main headings, H2 / section headings, and major titles strictly use Bodoni Moda */
+  h1, h2,
+  .font-bodoni {
+    font-family: 'Bodoni Moda', Georgia, serif !important;
+    letter-spacing: -0.015em;
   }
 
-  /* Descriptions, small text, labels, form controls, and UI elements strictly use Poppins */
-  p, span, label, input, select, textarea, button, a, li, dd, dt, 
-  .font-body, 
-  [class*="font-body"], 
-  [class*="font-sans"] {
-    font-family: 'Poppins', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-  }
-
-  /* Ensure child spans and tags inside headings strictly inherit Playfair Display */
-  h1 *, h2 *, h3 *, h4 *, h5 *, h6 * {
+  /* Ensure child spans and tags inside H1 and H2 strictly inherit Bodoni Moda */
+  h1 *, h2 * {
     font-family: inherit !important;
   }
 
-  /* Allow explicit span/div font-heading override */
-  span.font-heading, a.font-heading, div.font-heading, p.font-heading {
-    font-family: 'Playfair Display', Georgia, serif !important;
+  /* H3 and smaller headings, card titles, paragraphs, descriptions, navigation links,
+     buttons, form text, labels, breadcrumbs, small text, and general UI strictly use Manrope */
+  h3, h4, h5, h6,
+  p, span, label, input, select, textarea, button, a, li, dd, dt,
+  .font-body,
+  .font-manrope,
+  [class*="font-body"],
+  [class*="font-sans"] {
+    font-family: 'Manrope', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  }
+
+  /* Explicitly enforce Manrope on H3 and smaller headings, buttons, and links */
+  h3, h4, h5, h6,
+  h3 *, h4 *, h5 *, h6 *,
+  button, button *,
+  a, a *,
+  nav, nav *,
+  label, input, select, textarea {
+    font-family: 'Manrope', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
+  }
+
+  /* Re-assert H1 and H2 headings strictly take Bodoni Moda over generic element rules */
+  h1, h2,
+  h1 *, h2 * {
+    font-family: 'Bodoni Moda', Georgia, serif !important;
   }
 }
 

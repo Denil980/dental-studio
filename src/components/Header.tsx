@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { DentalLogo } from './DentalLogo';
 import { PageView } from '../types';
-import { Menu, X } from 'lucide-react';
+import { Menu, X, CalendarCheck } from 'lucide-react';
 
 interface HeaderProps {
   currentPage: PageView;
@@ -199,6 +199,22 @@ export const Header: React.FC<HeaderProps> = ({
               }`}
             >
               Contact Us
+            </button>
+          </div>
+
+          {/* Book Appointment Button inside opened mobile menu, at the bottom below navigation items */}
+          <div className="pt-2">
+            <button
+              onClick={() => {
+                setMobileMenuOpen(false);
+                onOpenBookingModal();
+              }}
+              className="w-full bg-[#0284C7] hover:bg-[#0369A1] text-white py-3 px-5 rounded-full shadow-[0_8px_25px_rgba(2,132,199,0.35)] flex items-center justify-center gap-2.5 font-bold text-sm tracking-wide transition-all duration-300 cursor-pointer active:scale-95"
+            >
+              <div className="w-7 h-7 rounded-full bg-white/20 flex items-center justify-center shrink-0">
+                <CalendarCheck className="w-4 h-4 text-white" />
+              </div>
+              <span className="whitespace-nowrap">Book Appointment</span>
             </button>
           </div>
         </div>
